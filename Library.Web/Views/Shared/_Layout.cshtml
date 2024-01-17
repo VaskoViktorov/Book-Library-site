@@ -166,7 +166,7 @@
                         <ul class="dropdown-menu drop">
                             <li><a href="@OptionsApplicationConfiguration.Value.BookCatalogueUrl">@Localizer["E-Library"]</a></li>
                             <li><a tabindex="-1" asp-area="LibraryBlog" asp-controller="Books" asp-action="Books">@Localizer["New books"]</a></li>
-                            <li><a tabindex="-1" asp-area="LibraryBlog" asp-controller="Subscriptions" asp-action="Subscriptions">@Localizer["Subscriptions"]</a></li>
+                            <li><a tabindex="-1" asp-area="LibraryBlog" asp-controller="Subscriptions" asp-action="Subscriptions">@Localizer["Subscription"]</a></li>
                             <li><a href="@OptionsApplicationConfiguration.Value.PersonsCatalogueUrl">@Localizer["Significant people"]</a></li>
                             <li><a href="@OptionsApplicationConfiguration.Value.OtherCataloguesUrl">@Localizer["Other E-Catalouges"]</a></li>
                         </ul>
@@ -222,10 +222,13 @@
             <div class="col-md-2" id="sidebar-right">@await Component.InvokeAsync("RightMenu")</div>
         </div>
         <footer>
+
             <div class="row mr-t-10 footer-row">
 
                 <div class="col-md-3 footer-fb">
                     <div class="p-0-3 fb-like float-left fb-box  box-shadow-type-two" async data-href="https://www.facebook.com/libvidin/" data-width="100" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+                    <a href="https://www.instagram.com/vidinbiblioteka/" target="_blank" style="margin-left: 10px"; ><img src="~/images/SiteImages/instagram2.png"  height="50" width="50" /></a>
+                    <a href="https://www.youtube.com/channel/UCxxELe7AVDtV9KmKiL9nNqw" target="_blank" style="margin-left: 5px"; ><img src="~/images/SiteImages/youtube.png"  height="45" width="65" /></a>
                 </div>
                 <div class="col-md-2 footer-box-2">
                     <ul class="lib-footer-ul">
@@ -254,10 +257,10 @@
                 </div>
                 <div class="col-md-2 text-right">
                     @await Html.PartialAsync("_SelectLanguagePartial")
-                    <p class="text-center">&copy; 2018 - @Localizer["Regional Library \"Mihalaki Georgiev\" - Vidin"]</p>
+                    <p class="text-center">&copy; 2022 - @Localizer["Regional Library \"Mihalaki Georgiev\" - Vidin"]</p>
                 </div>
             </div>
-        </footer>
+</footer>
     </div>
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.panorama_viewer.js"></script>

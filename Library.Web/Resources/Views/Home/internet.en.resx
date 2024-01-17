@@ -117,52 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Actions" xml:space="preserve">
-    <value>Действия</value>
+  <data name="Internet" xml:space="preserve">
+    <value>Safe internet</value>
   </data>
-  <data name="Create" xml:space="preserve">
-    <value>Създай</value>
+  <data name="SafetyRules" xml:space="preserve">
+    <value>Internet security and safety rules:</value>
   </data>
-  <data name="Delete" xml:space="preserve">
-    <value>Изтрии</value>
+  <data name="metadata" xml:space="preserve">
+    <value>Safe internet</value>
   </data>
-  <data name="Department" xml:space="preserve">
-    <value>Отдел</value>
+  <data name="ListItemOne" xml:space="preserve">
+    <value>• Never give personal information such as name, password, address, home phone number, school where you study, place of work or business phone number of your parents without their permission.</value>
   </data>
-  <data name="department of the library" xml:space="preserve">
-    <value>на библиотеката</value>
+  <data name="ListItemTwo" xml:space="preserve">
+    <value>• Never send photos or photos of your loved ones without first discussing your decision with your parents.</value>
   </data>
-  <data name="Distributed in" xml:space="preserve">
-    <value>Получава се в</value>
+  <data name="ListItemThree" xml:space="preserve">
+    <value>• Never accept a meeting with someone you have met on the Internet without the consent of your parents. If they approve the meeting, let it be in a public place and, if possible, in the presence of your relatives or friends.</value>
   </data>
-  <data name="Edit" xml:space="preserve">
-    <value>Редактирай</value>
+  <data name="ListItemEight" xml:space="preserve">
+    <value>• Always be careful when chatting. Remember that people online often pretend to be who they are not.</value>
   </data>
-  <data name="List of active subscriptions to newspapers and magazines that the library supports. If you want to read a newspaper or a magazine, come to the" xml:space="preserve">
-    <value>Списък с активните абонаменти на вестници и списания, които библиотеката поддържа. Ако желаете да прочетете даден вестник или списание, заповядайте в отдел</value>
+  <data name="ListItemFive" xml:space="preserve">
+    <value>• Never open an email received from an unknown sender. It may contain a virus or other program that could damage your computer</value>
   </data>
-  <data name="List of newspapers and magazines available for reading in Regional Library 'Mihalaki Georgiev' - Vidin." xml:space="preserve">
-    <value>Разгледайте списъка с абонаменти за весници и списания на Регионална библиотека 'Михалаки Георгиев' - гр. Видин</value>
+  <data name="ListItemFour" xml:space="preserve">
+    <value>• Never reply to messages that are offensive, threatening, obscene, or they make you feel uncomfortable. Inform your parents of such messages.</value>
   </data>
-  <data name="Magazines" xml:space="preserve">
-    <value>Списания</value>
+  <data name="ListItemNine" xml:space="preserve">
+    <value>• Always be polite and respect the rights of others.</value>
   </data>
-  <data name="Name" xml:space="preserve">
-    <value>Наименувание</value>
+  <data name="ListItemSeven" xml:space="preserve">
+    <value>• Always be careful when someone offers you something for free or invites you to get involved in an activity that promises easy and big profits.</value>
   </data>
-  <data name="Newspapers" xml:space="preserve">
-    <value>Вестници</value>
+  <data name="ListItemSix" xml:space="preserve">
+    <value>• Never pretend to be someone you are not. Don't hide your age and don't visit adult sites.</value>
   </data>
-  <data name="Reading rooms" xml:space="preserve">
-    <value>Читални</value>
-  </data>
-  <data name="Search" xml:space="preserve">
-    <value>Търси</value>
-  </data>
-  <data name="Subscription 2022" xml:space="preserve">
-    <value>Абонамент 2022</value>
-  </data>
-  <data name="Fast search" xml:space="preserve">
-    <value>Бързо търсене</value>
+  <data name="Source" xml:space="preserve">
+    <value>Source</value>
   </data>
 </root>

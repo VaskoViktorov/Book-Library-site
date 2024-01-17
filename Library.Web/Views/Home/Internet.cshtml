@@ -1,27 +1,27 @@
-﻿
+﻿@inject IViewLocalizer Localizer
 @{
-    ViewData["Title"] = "Безопасен интернет";
-    ViewData["Description"] = "Правила за безопасно ползване на интернет в Регионална библиотека \"Михалаки Георгиев\" - гр. Видин";
-}
+    ViewData["Title"] = Localizer["Internet"];
+    ViewData["Description"] = Localizer["SafetyRules"];
+  }
 <div class="row text-center">
-    <h2>@ViewData["Title"]</h2>
+    <h2>@ViewData["Title"] @Localizer["metadata"]</h2>
 </div>
 <div class="row text-justify width-85pr mr-0-auto">
-    <p class="bold mr-t-b-25">Правила за сигурност и безопасност в интернет:</p>
+    <p class="bold mr-t-b-25">@Localizer["metadata"]</p>
     <ul class="text-justify">
 
-        <li>Никога не давай лична информация като име, парола, адрес, домашен телефон, училището, в което учиш, месторабота или служебен телефон на родителите си, без тяхно разрешение.</li>
-        <li>Никога не изпращай свои снимки или снимки на твои близки, без преди това да си обсъдил решението си със своите родители.</li>
-        <li>Никога не приемай среща с някой, с когото си се запознал в интернет, без съгласието на твоите родители. Ако те одобрят срещата, нека тя да е на публично място и по възможност да е в присъствие на твои близки или приятели.</li>
-        <li>Никога не отговаряй на съобщения, които са обидни, заплашващи, неприлични или те карат да се чувстваш неудобно. Информирай родителите си за такива съобщения.</li>
-        <li>Никога не отваряй електронна поща, получена от непознат подател. Тя може да съдържа вирус или друга програма, която да увреди твоя компютър.</li>
-        <li>Никога не се представяй за някой, който не си. Не скривай годините си и не посещавай сайтове за възрастни.</li>
-        <li>Винаги внимавай, когато някой ти предлага нещо безплатно или те кани да се включиш в дейност, обещаваща лесна и голяма печалба.</li>
-        <li>Винаги внимавай, когато разговаряш в чат. Помни, че хората онлайн често се представят за такива, каквито не са.</li>
-        <li>Винаги бъди вежлив и уважавай правата на другите.</li>
+        <li class="mb-10">@Localizer["ListItemOne"];</li>
+        <li class="mb-10">@Localizer["ListItemTwo"];</li>
+        <li class="mb-10">@Localizer["ListItemThree"];</li>
+        <li class="mb-10">@Localizer["ListItemFour"];</li>
+        <li class="mb-10">@Localizer["ListItemFive"];</li>
+        <li class="mb-10">@Localizer["ListItemSix"];</li>
+        <li class="mb-10">@Localizer["ListItemSeven"];</li>
+        <li class="mb-10">@Localizer["ListItemEight"];</li>
+        <li class="mb-10">@Localizer["ListItemNine"];</li>
     </ul>
     <div class="text-right  mr-t-b-25">
-        <small>Източник: <a href="http://www.az-deteto.bg/">www.az-deteto.bg</a></small>
+        <small>@Localizer["Source"] <a href="http://www.az-deteto.bg/">www.az-deteto.bg</a></small>
     </div>
 </div>
 

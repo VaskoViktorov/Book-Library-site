@@ -123,10 +123,10 @@
   <data name="Become volunteer" xml:space="preserve">
     <value>Стани Доброволец</value>
   </data>
-  <data name="Join survey" xml:space="preserve">
-    <value>Участвай в анкета</value>
+  <data name="BiblioBus" xml:space="preserve">
+    <value>Библиобус</value>
   </data>
-  <data name="LibraryPost" xml:space="preserve">
+  <data name="BiblioPost" xml:space="preserve">
     <value>БиблиоПоща</value>
   </data>
   <data name="Make donation" xml:space="preserve">

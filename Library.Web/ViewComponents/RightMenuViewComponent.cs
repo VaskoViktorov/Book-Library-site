@@ -1,4 +1,6 @@
-﻿namespace Library.Web.ViewComponents
+﻿using System.Linq;
+
+namespace Library.Web.ViewComponents
 {
     using Areas.LibraryBlog.Models.Surveys;
     using Infrastructure.Extensions;
@@ -13,11 +15,11 @@
         public IViewComponentResult Invoke()
         {
             var filePath = string.Format(GetSurveysJsonPath(), Directory.GetCurrentDirectory());
-            var surveys = ObjToJsonConverterExtensions.ListofSurveysInJsonFile(filePath);
+            var survey = ObjToJsonConverterExtensions.ListofSurveysInJsonFile(filePath).First();
 
             return this.View(new SurveyListingViewModel
             {
-                Surveys = surveys
+                Survey = survey
             });
         }
 

@@ -117,52 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Actions" xml:space="preserve">
-    <value>Действия</value>
+  <data name="Internet" xml:space="preserve">
+    <value>Безопасен интернет</value>
   </data>
-  <data name="Create" xml:space="preserve">
-    <value>Създай</value>
+  <data name="SafetyRules" xml:space="preserve">
+    <value>Правила за сигурност и безопасност в интернет:</value>
   </data>
-  <data name="Delete" xml:space="preserve">
-    <value>Изтрии</value>
+  <data name="metadata" xml:space="preserve">
+    <value>• "Правила за безопасно ползване на интернет в Регионална библиотека \"Михалаки Георгиев\" - гр. Видин";</value>
   </data>
-  <data name="Department" xml:space="preserve">
-    <value>Отдел</value>
+  <data name="ListItemOne" xml:space="preserve">
+    <value>• Никога не давай лична информация като име, парола, адрес, домашен телефон, училището, в което учиш, месторабота или служебен телефон на родителите си, без тяхно разрешение.</value>
   </data>
-  <data name="department of the library" xml:space="preserve">
-    <value>на библиотеката</value>
+  <data name="ListItemTwo" xml:space="preserve">
+    <value>•Никога не изпращай свои снимки или снимки на твои близки, без преди това да си обсъдил решението си със своите родители.</value>
   </data>
-  <data name="Distributed in" xml:space="preserve">
-    <value>Получава се в</value>
+  <data name="ListItemThree" xml:space="preserve">
+    <value>•Никога не приемай среща с някой, с когото си се запознал в интернет, без съгласието на твоите родители. Ако те одобрят срещата, нека тя да е на публично място и по възможност да е в присъствие на твои близки или приятели</value>
   </data>
-  <data name="Edit" xml:space="preserve">
-    <value>Редактирай</value>
+  <data name="ListItemEight" xml:space="preserve">
+    <value>• Винаги внимавай, когато разговаряш в чат. Помни, че хората онлайн често се представят за такива, каквито не са.</value>
   </data>
-  <data name="List of active subscriptions to newspapers and magazines that the library supports. If you want to read a newspaper or a magazine, come to the" xml:space="preserve">
-    <value>Списък с активните абонаменти на вестници и списания, които библиотеката поддържа. Ако желаете да прочетете даден вестник или списание, заповядайте в отдел</value>
+  <data name="ListItemFive" xml:space="preserve">
+    <value>• Никога не отваряй електронна поща, получена от непознат подател. Тя може да съдържа вирус или друга програма, която да увреди твоя компютър.</value>
   </data>
-  <data name="List of newspapers and magazines available for reading in Regional Library 'Mihalaki Georgiev' - Vidin." xml:space="preserve">
-    <value>Разгледайте списъка с абонаменти за весници и списания на Регионална библиотека 'Михалаки Георгиев' - гр. Видин</value>
+  <data name="ListItemFour" xml:space="preserve">
+    <value>• Никога не отговаряй на съобщения, които са обидни, заплашващи, неприлични или те карат да се чувстваш неудобно. Информирай родителите си за такива съобщения.</value>
   </data>
-  <data name="Magazines" xml:space="preserve">
-    <value>Списания</value>
+  <data name="ListItemNine" xml:space="preserve">
+    <value>• Винаги бъди вежлив и уважавай правата на другите.</value>
   </data>
-  <data name="Name" xml:space="preserve">
-    <value>Наименувание</value>
+  <data name="ListItemSeven" xml:space="preserve">
+    <value>•Винаги внимавай, когато някой ти предлага нещо безплатно или те кани да се включиш в дейност, обещаваща лесна и голяма печалба.</value>
   </data>
-  <data name="Newspapers" xml:space="preserve">
-    <value>Вестници</value>
+  <data name="ListItemSix" xml:space="preserve">
+    <value>• Никога не се представяй за някой, който не си. Не скривай годините си и не посещавай сайтове за възрастни.</value>
   </data>
-  <data name="Reading rooms" xml:space="preserve">
-    <value>Читални</value>
-  </data>
-  <data name="Search" xml:space="preserve">
-    <value>Търси</value>
-  </data>
-  <data name="Subscription 2022" xml:space="preserve">
-    <value>Абонамент 2022</value>
-  </data>
-  <data name="Fast search" xml:space="preserve">
-    <value>Бързо търсене</value>
+  <data name="Source" xml:space="preserve">
+    <value>Източник</value>
   </data>
 </root>

@@ -234,8 +234,8 @@
   <data name="Structure" xml:space="preserve">
     <value>Структура</value>
   </data>
-  <data name="Subscriptions" xml:space="preserve">
-    <value>Абонаменти</value>
+  <data name="Subscription" xml:space="preserve">
+    <value>Абонамент</value>
   </data>
   <data name="Sunday" xml:space="preserve">
     <value>Неделя</value>

@@ -129,7 +129,7 @@
             app.UseRequestLocalization();
 
             var options = new RewriteOptions()
-              .AddRedirectToHttps();
+             .AddRedirectToHttps();
 
             options.Rules.Add(new NonWwwRule());            
             app.UseRewriter(options);

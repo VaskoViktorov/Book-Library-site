@@ -162,9 +162,6 @@
   <data name="Desislava Ivanova" xml:space="preserve">
     <value>Десислава Иванова</value>
   </data>
-  <data name="Desislava Krusteva" xml:space="preserve">
-    <value>Десислава Кръстева</value>
-  </data>
   <data name="Dimitrina Dimitrova" xml:space="preserve">
     <value>Димитрина Димитрова</value>
   </data>
@@ -183,14 +180,8 @@
   <data name="Homeland department" xml:space="preserve">
     <value>Краезнание</value>
   </data>
-  <data name="Irena Filipova" xml:space="preserve">
-    <value>Ирена Филипова</value>
-  </data>
-  <data name="Ivanka Ivanova" xml:space="preserve">
-    <value>Иванка Иванова</value>
-  </data>
-  <data name="Kristian Hristov" xml:space="preserve">
-    <value>Кристиян Христов</value>
+  <data name="Ivan Martinov" xml:space="preserve">
+    <value>Иван Мартинов</value>
   </data>
   <data name="Lidia Velkova" xml:space="preserve">
     <value>Лидия Векова</value>
@@ -198,17 +189,11 @@
   <data name="List with contact information for the staff of Regional Library 'Mihalaki Georgiev' - Vidin" xml:space="preserve">
     <value>Списък на служителите на Регионална библиотека 'Михалаки Георгиев' - гр. Видин и информация за контакт с тях.</value>
   </data>
-  <data name="Liudmila Siridonova" xml:space="preserve">
+  <data name="Liudmila Spiridonova" xml:space="preserve">
     <value>Людмила Спиридонова</value>
   </data>
   <data name="Manuela Mitkova" xml:space="preserve">
     <value>Мануела Миткова</value>
-  </data>
-  <data name="Mariana Petrova" xml:space="preserve">
-    <value>Мариана Петрова</value>
-  </data>
-  <data name="Maya Manolova" xml:space="preserve">
-    <value>Мая Миланова</value>
   </data>
   <data name="Methodological" xml:space="preserve">
     <value>Методичен отдел</value>
@@ -240,19 +225,37 @@
   <data name="Tatiana Nikolova" xml:space="preserve">
     <value>Татяна Николова</value>
   </data>
-  <data name="Todor Mladenov" xml:space="preserve">
-    <value>Тодор Младенов</value>
-  </data>
-  <data name="Todorka Doncheva" xml:space="preserve">
-    <value>Тодорка Дончева</value>
-  </data>
   <data name="Tsvetan Tsekov" xml:space="preserve">
     <value>Цветан Цеков</value>
   </data>
   <data name="Valentina Vulcheva" xml:space="preserve">
     <value>Валентина Вълчева</value>
   </data>
-  <data name="Vasko Viktorov" xml:space="preserve">
-    <value>Васко Викторов</value>
+  <data name="Iren Cenova" xml:space="preserve">
+    <value>Ирен Ценова</value>
+  </data>
+  <data name="Krasimir Krustev" xml:space="preserve">
+    <value>Красимир Кръстев</value>
+  </data>
+  <data name="Ludmila Georgieva" xml:space="preserve">
+    <value>Людмила Георгиева</value>
+  </data>
+  <data name="Veselka Vitkova" xml:space="preserve">
+    <value>Веселка Виткова</value>
+  </data>
+  <data name="Public relations" xml:space="preserve">
+    <value>Връзки с обществеността</value>
+  </data>
+  <data name="Elena Alexandrova" xml:space="preserve">
+    <value>Елена Александрова</value>
+  </data>
+  <data name="Hristina Sugarcheva" xml:space="preserve">
+    <value>Христина Сугарчева</value>
+  </data>
+  <data name="Mihaela Mitkova" xml:space="preserve">
+    <value>Михаела Миткова</value>
+  </data>
+  <data name="Irena Filipova" xml:space="preserve">
+    <value>Ирена Филипова</value>
   </data>
 </root>

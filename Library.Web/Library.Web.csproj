@@ -3,6 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <UserSecretsId>aspnet-Library.Web-C40EBB32-6DE2-454B-9C80-0EFF6B34AD1E</UserSecretsId>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>test_key.pfx</AssemblyOriginatorKeyFile>
+    <StartupObject />
   </PropertyGroup>
 
 
@@ -12,7 +15,7 @@
     <PackageReference Include="HtmlSanitizer" Version="4.0.183" />
     <PackageReference Include="jQuery" Version="3.3.1" />
     <PackageReference Include="Magnific.Popup" Version="1.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Rewrite" Version="2.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" PrivateAssets="All" />
@@ -101,6 +104,16 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>IndexViewModelResx.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Views\Home\internet.bg1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>internet.bg1.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Views\Home\internet.en1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>internet.en1.resx</DependentUpon>
     </Compile>
     <Compile Update="Resources\Views\Shared\_SearchForm.bg.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -330,6 +343,33 @@
     <EmbeddedResource Update="Resources\Views\Account\Register.bg.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Home\BecomeVolunteer.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Home\BecomeVolunteer.bg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BecomeVolunteer.bg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Home\Bus.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Home\Bus.bg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Home\internet.bg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Home\internet.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Home\internet.en1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>internet.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Home\internet.bg1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>internet.bg1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\Views\Home\Contributors.bg.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
@@ -402,10 +442,22 @@
     <EmbeddedResource Update="Resources\Views\Home\Methodological.en.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Home\ProgramForKids.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Home\ProgramForKids.bg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\Views\Home\Privacy.bg.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Views\Home\Privacy.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Home\Services.bg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Home\Services.en.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Views\Home\SrcDepartment.bg.resx">

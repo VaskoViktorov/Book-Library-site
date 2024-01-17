@@ -61,6 +61,15 @@ namespace Library.Web.Resources.Areas.LibraryBlog.Models.Surveys {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Covid.
+        /// </summary>
+        public static string Covid {
+            get {
+                return ResourceManager.GetString("Covid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The {0} is required..
         /// </summary>
         public static string RequiredErrorMsg {

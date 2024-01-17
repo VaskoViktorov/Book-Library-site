@@ -1,6 +1,7 @@
-﻿@model RawHtmlViewModel
+﻿@inject IViewLocalizer Localizer
+@model RawHtmlViewModel
 @{
-    ViewData["Title"] = "Програма за работа с деца";
+    ViewData["Title"] = @Localizer["ProgramForKids"];
     ViewData["Description"] = "Списък с клубните форми на Регионална библиотека \"Михалаки Георгиев\" - гр. Видин, за деца .";
 }
 <div class="row text-center">

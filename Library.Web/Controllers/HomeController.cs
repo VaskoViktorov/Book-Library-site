@@ -168,6 +168,12 @@
         public IActionResult LibraryPost()
             => View();
 
+        public IActionResult BecomeVolunteer()
+            => View();
+
+        public IActionResult Covid()
+            => View();
+
         public IActionResult Library()
             => View();
 

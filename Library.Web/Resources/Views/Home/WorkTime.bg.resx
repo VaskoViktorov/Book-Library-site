@@ -126,8 +126,8 @@
   <data name="9:00 to 14:00" xml:space="preserve">
     <value>9:00-14:00 часа</value>
   </data>
-  <data name="9:00 to 18:00" xml:space="preserve">
-    <value>9:00-18:00 часа</value>
+  <data name="9:00 to 17:00" xml:space="preserve">
+    <value>9:00-17:00 часа</value>
   </data>
   <data name="Art" xml:space="preserve">
     <value>Изкуство</value>
@@ -170,5 +170,8 @@
   </data>
   <data name="Opening hours of all departments in the 'Mihalaki Georgiev' Regional Library - Vidin" xml:space="preserve">
     <value>Работно време на всички отдели в Регионална библиотека 'Михалаки Георгиев' - гр. Видин</value>
+  </data>
+  <data name="9:00 to 18:00" xml:space="preserve">
+    <value>9:00-18:00 часа</value>
   </data>
 </root>

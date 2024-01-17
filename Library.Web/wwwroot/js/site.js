@@ -135,24 +135,29 @@ $(document).ready(function () {
     var d = new Date();
     var dayOfWeek = d.getDay();
     var hour = d.getHours();
-    var mins = d.getMinutes();
     var status = 'open';
 
-    if (dayOfWeek !== 6 && dayOfWeek !== 0 && hour >= 9 && hour < 18) {
-        if (hour === '9' && mins < '00') {
-            status = 'closed';
+    if (dayOfWeek != 0 && dayOfWeek != 7) {
+
+        if (dayOfWeek != 6) {
+            if (hour >= 9 && hour < 18) {
+                status = 'open';
+
+            } else {
+                status = 'closed';
+            }
         } else {
-            status = 'open';
-        }
-    } else if (dayOfWeek === 6 && hour >= 9 && hour < 14) {
-        if (hour === '9' && mins < '00') {
-            status = 'closed';
-        } else {
-            status = 'open';
+            if (hour >= 9 && hour < 14) {
+                status = 'open';
+            } else {
+                status = 'closed';
+            }
         }
     } else {
         status = 'closed';
     }
+
+        
 
     if (status === 'open') {
         $('.hours').show();
@@ -170,7 +175,7 @@ $(document).ready(function () {
             locale: "bg",
             monthNames: [
                 "Януари", "Февруари", "Март", "Април", "Май", "Юни",
-                "Юли", "Август", "Септмври", "Октомври", "Ноември", "Декември"
+                "Юли", "Август", "Септeмври", "Октомври", "Ноември", "Декември"
             ],
             dayNames: [
                 'Неделя', 'Понеделник', 'Вторник', 'Сряда',
@@ -187,7 +192,7 @@ $(document).ready(function () {
             "moment": {
                 "months": [
                     "Януари", "Февруари", "Март", "Април", "Май", "Юни",
-                    "Юли", "Август", "Септмври", "Октомври", "Ноември", "Декември"
+                    "Юли", "Август", "Септeмври", "Октомври", "Ноември", "Декември"
                 ],
                 "monthsShort": [
                     "Яну", "Фев", "Мар", "Апр", "Май", "Юни",

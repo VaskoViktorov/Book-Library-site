@@ -286,3 +286,10 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+/Library.Web/.config/dotnet-tools.json
+/Library.Web/appsettings.json
+/Library.Web/wwwroot/images/BookCovers
+/Library.Web/wwwroot/images/GalleryImages
+/Library.Web/wwwroot/sounds
+/Library.Web/appsettings.json
+/Library.Web/wwwroot/pages/ProgramForKidsPageHtml2023old.txt

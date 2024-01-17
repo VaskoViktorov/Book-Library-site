@@ -4,6 +4,6 @@
 
     public class SurveyListingViewModel
     {
-        public IEnumerable<SurveyFormModel> Surveys { get; set; }
+        public SurveyFormModel Survey { get; set; }
     }
 }

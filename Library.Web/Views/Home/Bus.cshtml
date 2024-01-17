@@ -1,0 +1,16 @@
+﻿@inject IViewLocalizer Localizer
+@model RawHtmlViewModel
+@{
+    ViewData["Title"] = @Localizer["BiblioBus"];
+    ViewData["Description"] = @Localizer["BiblioBusSchedule"];
+}
+
+
+
+
+<div class="row text-center">
+    <h2>@ViewData["Title"]</h2>
+</div>
+<div class="row">
+    @Html.Raw(Model.Html)
+</div>

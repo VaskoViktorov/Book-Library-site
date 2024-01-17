@@ -23,13 +23,13 @@
         </a>
     </div>   
     <div>
-        <a asp-area="LibraryBlog" asp-controller="Surveys" asp-action="Survey" asp-route-id="@Model.Surveys.Last().id">
+        <a asp-area="" asp-controller="Home" asp-action="BecomeVolunteer">
             <p class="lib-sidebar-p1 box-shaddow-type-one">@Localizer["Become volunteer"]</p>
         </a>
     </div>
     <div>
-        <a asp-area="LibraryBlog" asp-controller="Surveys" asp-action="Survey" asp-route-id="@Model.Surveys.First().id">
-            <p class="lib-sidebar-p1 box-shaddow-type-one">@Localizer["Join survey"]</p>
+        <a asp-area="LibraryBlog" asp-controller="Surveys" asp-action="Survey" asp-route-id="@Model.Survey.id">
+            <p class="lib-sidebar-p1 box-shaddow-type-one">@Localizer["BiblioBus"]</p>
         </a>
     </div>
     <div>
@@ -39,7 +39,7 @@
     </div>
     <div class="lib-bp">
         <a asp-area="" asp-controller="Home" asp-action="LibraryPost">
-            <p class="lib-sidebar-p">@Localizer["LibraryPost"]</p>
+            <p class="lib-sidebar-p">@Localizer["BiblioPost"]</p>
             <img class=" box-shaddow-type-one lib-sidebar-img hidden-md hidden-sm hidden-xs" src="~/images/SiteImages/biblio-poshta.JPG" alt="@Localizer["LibraryPost"]" />
             <div class="hidden-lg bor-bot-l-rad-20 box-shaddow-type-one">
                 <img class="lib-sidebar-img" src="~/images/SiteImages/biblio-poshta.JPG" alt="@Localizer["LibraryPost"]" />
