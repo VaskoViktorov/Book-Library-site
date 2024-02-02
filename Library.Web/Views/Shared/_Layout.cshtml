@@ -69,6 +69,8 @@
             crossorigin="anonymous"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
     </script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v19.0" nonce="j7aOT8Zw"></script>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -226,10 +228,14 @@
             <div class="row mr-t-10 footer-row">
 
                 <div class="col-md-3 footer-fb">
-                    <div class="p-0-3 fb-like float-left fb-box  box-shadow-type-two" async data-href="https://www.facebook.com/libvidin/" data-width="100" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-                    <a href="https://www.instagram.com/vidinbiblioteka/" target="_blank" style="margin-left: 10px"; ><img src="~/images/SiteImages/instagram2.png"  height="50" width="50" /></a>
-                    <a href="https://www.youtube.com/channel/UCxxELe7AVDtV9KmKiL9nNqw" target="_blank" style="margin-left: 5px"; ><img src="~/images/SiteImages/youtube.png"  height="45" width="65" /></a>
-                </div>
+                    <div class="row">
+                        <div class="fb-page" data-small-header="true" data-href="https://www.facebook.com/libvidin" data-tabs="" data-width="340" data-height="200" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/libvidin" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/libvidin">Регионална библиотека &quot;Михалаки Георгиев&quot; - Видин</a></blockquote></div>
+                    </div>
+                    <div class="row mr-t-10 text-center">
+                        <a href="https://www.instagram.com/vidinbiblioteka/" target="_blank" style="margin-left: 10px" ;><img src="~/images/SiteImages/instagram2.png" height="50" width="50" /></a>
+                        <a href="https://www.youtube.com/channel/UCxxELe7AVDtV9KmKiL9nNqw" target="_blank" style="margin-left: 5px" ;><img src="~/images/SiteImages/youtube.png" height="45" width="65" /></a>
+                    </div>
+                     </div>
                 <div class="col-md-2 footer-box-2">
                     <ul class="lib-footer-ul">
                         <li><a asp-area="" asp-controller="Home" asp-action="WorkTime">@Localizer["Opening hours"]</a></li>
@@ -257,7 +263,9 @@
                 </div>
                 <div class="col-md-2 text-right">
                     @await Html.PartialAsync("_SelectLanguagePartial")
-                    <p class="text-center">&copy; 2022 - @Localizer["Regional Library \"Mihalaki Georgiev\" - Vidin"]</p>
+                    <p class="text-center">
+                        &copy; <script>document.write(new Date().getFullYear());</script> - @Localizer["Regional Library \"Mihalaki Georgiev\" - Vidin"]
+                    </p>
                 </div>
             </div>
 </footer>

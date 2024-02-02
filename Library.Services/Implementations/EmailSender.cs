@@ -47,8 +47,10 @@
 
                 using (SmtpClient smtp = new SmtpClient(Options.PrimaryDomain, Options.PrimaryPort))
                 {
+                    smtp.UseDefaultCredentials = false;
                     smtp.Credentials = new NetworkCredential(Options.UsernameEmail, Options.UsernamePassword);
                     smtp.EnableSsl = true;
+                    
                     await smtp.SendMailAsync(mail);
                 }
             }
