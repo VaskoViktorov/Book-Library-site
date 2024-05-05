@@ -59,7 +59,8 @@
                                 Email = adminEmail,
                                 UserName = username,
                                 UserFullName = roleNameAdmin,
-                                UserAge = 27
+                                UserAge = 27,
+                                EmailConfirmed = true
                             };
 
                             await userManager.CreateAsync(adminUser, "admin12");

@@ -2,6 +2,19 @@
 {
     public class DataConstants
     {
+        public const int EmployeeNameMinLength = 10;
+        public const int EmployeeNameMaxLength = 150;
+
+        public const int EmployeePhoneMinLengt = 6;
+        public const int EmployeePhoneMaxLengt = 20; 
+        
+        public const int DepartmentStructureDepartmentUnitMinLength = 5;
+        public const int DepartmentStructureDepartmentUnitMaxLength = 150;
+        public const int DepartmentStructureDepartmentEmailMinLength = 8;
+        public const int DepartmentStructureDepartmentEmailMaxLength = 50;
+        public const int DepartmentStructureOrderMinLenght = 1;
+        public const int DepartmentStructureOrderMaxLenght = 2;
+
         public const int UserNameMinLength = 3;
         public const int UserNameMaxLength = 50;
         public const int UserFullNameMinLength = 6;

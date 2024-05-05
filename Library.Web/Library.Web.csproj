@@ -50,6 +50,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>BookFormModelResx.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\Areas\LibraryBlog\Models\Departments\DepartmentFormModelResx.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DepartmentFormModelResx.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resources\Areas\LibraryBlog\Models\Events\EventFormModelResx.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -141,6 +146,13 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>BookFormModelResx.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\Departments\DepartmentFormModelResx.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\Departments\DepartmentFormModelResx.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DepartmentFormModelResx.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\Events\EventFormModelResx.bg.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
@@ -211,6 +223,18 @@
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Books\_BookListingView.bg.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Departments\Delete.bg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Departments\Edit.bg.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Departments\_DepartmentForm.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Departments\Create.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Events\Create.bg.resx">
       <Generator>ResXFileCodeGenerator</Generator>

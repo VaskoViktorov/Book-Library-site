@@ -99,6 +99,7 @@ namespace Library.Web
         //LibraryBlog model message name in bg for temp data
         public const string BookBgModelName = "Книгата";
         public const string ArticleBgModelName = "Статията";
+        public const string DepartmentBgModelName = "Отдела";
         public const string EventBgModelName = "Събитието";
         public const string GalleryBgModelName = "Галерията";
         public const string SubscriptionBgModelName = "Абонамента";
