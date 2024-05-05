@@ -31,6 +31,10 @@ namespace Library.Web
         public const string LandDepartment = "Краезнание";
         public const string ForeignDepartment = "Чуждоезиков";
 
+        //DepartmentStructureType names
+        public const string AdministrationStructureDepartment = "Администрация";
+        public const string ServiceStructureDepartment = "Обслужващи звена";
+        public const string SpecializedStructureDepartment = "Специализирани звена";
         //Culture short/long name
         public const string BulgarianLanguage = "bg";
         public const string BulgarianCulture = "bg-BG";
@@ -100,6 +104,7 @@ namespace Library.Web
         public const string BookBgModelName = "Книгата";
         public const string ArticleBgModelName = "Статията";
         public const string DepartmentBgModelName = "Отдела";
+        public const string EmployeeBgModelName = "Служителя";
         public const string EventBgModelName = "Събитието";
         public const string GalleryBgModelName = "Галерията";
         public const string SubscriptionBgModelName = "Абонамента";

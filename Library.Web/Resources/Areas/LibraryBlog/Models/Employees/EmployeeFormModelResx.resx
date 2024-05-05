@@ -117,17 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DepartmentBg" xml:space="preserve">
-    <value>Department name in Bulgarian</value>
+  <data name="DepartmentStructures" xml:space="preserve">
+    <value>Department</value>
   </data>
-  <data name="DepartmentEmail" xml:space="preserve">
-    <value>Department Email</value>
+  <data name="EmployeeDepartmentStructureId" xml:space="preserve">
+    <value>Department</value>
   </data>
-  <data name="DepartmentEn" xml:space="preserve">
-    <value>Department name in English</value>
+  <data name="EmployeeNameBg" xml:space="preserve">
+    <value>Employee name in bulgarian</value>
   </data>
-  <data name="DepartmentStructureType" xml:space="preserve">
-    <value>Department Structure Type</value>
+  <data name="EmployeeNameEn" xml:space="preserve">
+    <value>Employee name in english</value>
+  </data>
+  <data name="EmployeeOrder" xml:space="preserve">
+    <value>Order number in department</value>
+  </data>
+  <data name="EmployeePhoneNumbers" xml:space="preserve">
+    <value>Phone numbers</value>
   </data>
   <data name="MaxLengthErrorMsg" xml:space="preserve">
     <value>The {0} field can't be longer than {1} symbols.</value>

@@ -1,15 +1,10 @@
 ﻿namespace Library.Web.Areas.LibraryBlog.Models.Departments
 {
     using Data.Models;
-    using Microsoft.AspNetCore.Http;
     using Resources.Areas.LibraryBlog.Models.Departments;
-    using System;
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using Infrastructure.Filters;
 
     using static Data.DataConstants;
-    using Library.Web.Resources.Areas.LibraryBlog.Models.Departments;
 
     public class DepartmentFormModel
     {

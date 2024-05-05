@@ -55,6 +55,21 @@
             return String.Empty;
         }
 
+        public static string DepartmentsStructureTypeToBgLang(this DepartmentStructureType text)
+        {
+            switch (text)
+            {
+                case DepartmentStructureType.Administration:
+                    return AdministrationStructureDepartment;
+                case DepartmentStructureType.SpecializedUnits:
+                    return SpecializedStructureDepartment;
+                case DepartmentStructureType.ServiceUnits:
+                    return ServiceStructureDepartment;               
+            }
+
+            return String.Empty;
+        }
+
         //Extracts text from html
         public static string TruncateHtml(this string html, int maxCharacters, string trailingText)
         {

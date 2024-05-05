@@ -6,7 +6,7 @@
         public const int EmployeeNameMaxLength = 150;
 
         public const int EmployeePhoneMinLengt = 6;
-        public const int EmployeePhoneMaxLengt = 20; 
+        public const int EmployeePhoneMaxLengt = 100; 
         
         public const int DepartmentStructureDepartmentUnitMinLength = 5;
         public const int DepartmentStructureDepartmentUnitMaxLength = 150;

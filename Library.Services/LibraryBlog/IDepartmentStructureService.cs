@@ -1,7 +1,7 @@
 ﻿namespace Library.Services.LibraryBlog
 {
     using Data.Models;
-    using Library.Services.LibraryBlog.Models.DepartmentStructure;
+    using Models.DepartmentStructure;
     using System.Collections.Generic;
     using System.Threading.Tasks;
     public interface IDepartmentStructureService

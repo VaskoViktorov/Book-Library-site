@@ -55,6 +55,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>DepartmentFormModelResx.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\Areas\LibraryBlog\Models\Employees\EmployeeFormModelResx.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EmployeeFormModelResx.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resources\Areas\LibraryBlog\Models\Events\EventFormModelResx.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -74,6 +79,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>SurveyFormModelResx.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Areas\LibraryBlog\Views\Employees\Edit.bg.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Edit.bg.resx</DependentUpon>
     </Compile>
     <Compile Update="Resources\Models\Account\ForgotPasswordViewModelResx.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -152,6 +162,13 @@
     <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\Departments\DepartmentFormModelResx.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>DepartmentFormModelResx.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\Employees\EmployeeFormModelResx.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\Employees\EmployeeFormModelResx.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmployeeFormModelResx.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\Events\EventFormModelResx.bg.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -234,6 +251,19 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Departments\Create.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Employees\Create.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Employees\Delete.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Employees\Edit.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Edit.bg.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Employees\_EmployeeForm.bg.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Events\Create.bg.resx">

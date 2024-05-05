@@ -18,8 +18,12 @@
         [MaxLength(EmployeeNameMaxLength)]
         public string NameEn { get; set; }
 
-        public List<EmployeePhone> EmployeePhones { get; set; } = new List<EmployeePhone>();
+        [Required]
+        [MinLength(EmployeePhoneMinLengt)]
+        [MaxLength(EmployeePhoneMaxLengt)]
+        public string PhoneNumbers { get; set; }
 
+        [Required]
         public int Order { get; set; }
 
         [Required]

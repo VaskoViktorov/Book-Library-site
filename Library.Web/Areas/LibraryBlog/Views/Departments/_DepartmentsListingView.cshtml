@@ -3,34 +3,99 @@
 @{
     var currentCulture = Context.Features.Get<IRequestCultureFeature>().RequestCulture.UICulture.Name;
 }
-@foreach (var department in Model.Departments)
-{
+<div class="row p-10-table">
+    <table class="table table-condensed table-responsive vertical-align-middle">
+        <thead>
+            <tr>
+                <th class="text-center first-color-b second-color">@Localizer["Department"]</th>
+                <th class="text-center first-color-b second-color">@Localizer["Name"]</th>
+                <th class="text-center first-color-b second-color">@Localizer["Phone"]</th>
+                <th class="text-center first-color-b second-color">@Localizer["Department Email"]</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var structType in Enum.GetValues(typeof(DepartmentStructureType)))
+            {
+                <tr>
+                    <th colspan="4" class="text-center" style="background-color: #29739E; color: #FFEDD8 !important;">@StringExtensions.DepartmentsStructureTypeToBgLang((DepartmentStructureType)structType)</th>
+                </tr>
+                @foreach (var department in Model.Departments.Where(d => d.DepartmentStructureType.Equals(structType)))
+                {
 
-    <div class="col-md-12">
-        <div class="row text-center">
-            <p>
-                "@{
-                if (currentCulture == "bg-BG")
-                {
-                    @department.DepartmentUnitBg
+                    <tr>
+                        @{
+                            var empls = department.Employees;
+                            var emplsCount = empls.Count();
+                            var expectedCount = emplsCount;
+                            if (emplsCount == 0)
+                            {
+                                expectedCount += 1;
+                            }
+                        }
+                        <th class="text-center first-color-b second-color" style="vertical-align: middle;" rowspan="@expectedCount">
+                            @{
+
+                                if (currentCulture == "bg-BG")
+                                {
+                                    @department.DepartmentUnitBg
+                                }
+                                else
+                                {
+                                    @department.DepartmentUnitEn
+                                }
+                            }
+                        </th>
+                        <td class="vertical-align-middle lib-cell-corrector">
+                            @{
+
+                                var phoneNumber = "-";
+                                if (emplsCount > 0)
+                                {
+                                    phoneNumber = empls.First().PhoneNumbers;
+
+                                    if (currentCulture == "bg-BG")
+                                    {
+                                        @department.Employees.First().NameBg
+                                    }
+                                    else
+                                    {
+                                        @department.Employees.First().NameEn
+                                    }
+                                }
+                                else
+                                {
+                                    @Localizer["No employees"]
+                                    ;
+                                }
+
+
+                            }
+
+                        </td>
+                        <td class="vertical-align-middle lib-cell-corrector">@phoneNumber</td>
+                        <td class="vertical-align-middle lib-cell-corrector" rowspan="@expectedCount"><a>@department.DepartmentEmail</a></td>
+                    </tr>
+                    @foreach (var employee in department.Employees.OrderBy(e => e.Order).Skip(1))
+                    {
+                        <tr>
+                            <td class="vertical-align-middle lib-cell-corrector">
+                                @{
+                                    if (currentCulture == "bg-BG")
+                                    {
+                                        @employee.NameBg
+                                    }
+                                    else
+                                    {
+                                        @employee.NameEn
+                                    }
+                                }
+
+                            </td>
+                            <td class="vertical-align-middle lib-cell-corrector">@employee.PhoneNumbers</td>
+                        </tr>
+                    }
                 }
-                else
-                {
-                    @department.DepartmentUnitEn
-                }
-                }"
-            </p>
-            <p>@department.DepartmentEmail</p>
-        <div class="row text-center">
-            <div class="text-center mr-30-auto width-60pr">
-                @if (User.IsInRole(WebConstants.AdministratorRole))
-                {
-                <a class="btn-sm btn-warning" asp-area="LibraryBlog" asp-controller="Departments" asp-action="Edit" asp-route-id="@department.Id">@Localizer["Edit"]</a>
-                <a class="btn-sm btn-danger" asp-area="LibraryBlog" asp-controller="Departments" asp-action="Delete" asp-route-id="@department.Id">@Localizer["Delete"]</a>
-                }
-            </div>
-        </div>
-    </div>
-    <hr class="lib-hr width-60pr " />
-    </div>
-}
+            }
+        </tbody>
+    </table>
+</div>

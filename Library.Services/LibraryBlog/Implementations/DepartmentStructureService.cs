@@ -1,10 +1,8 @@
 ﻿namespace Library.Services.LibraryBlog.Implementations
 {
     using AutoMapper.QueryableExtensions;
-    using Common.Infrastructure;
     using Data;
     using Data.Models;
-    using Library.Services.LibraryBlog;
     using Library.Services.LibraryBlog.Models.DepartmentStructure;
     using Microsoft.EntityFrameworkCore;
     using System.Collections.Generic;

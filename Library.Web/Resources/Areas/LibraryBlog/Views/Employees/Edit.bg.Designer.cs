@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Library.Web.Resources.Areas.LibraryBlog.Models.Departments {
+namespace Library.Web.Resources.Areas.LibraryBlog.Views.Employees {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Library.Web.Resources.Areas.LibraryBlog.Models.Departments {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class DepartmentFormModelResx {
+    public class Edit_bg_ {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal DepartmentFormModelResx() {
+        internal Edit_bg_() {
         }
         
         /// <summary>
@@ -39,8 +39,7 @@ namespace Library.Web.Resources.Areas.LibraryBlog.Models.Departments {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Library.Web.Resources.Areas.LibraryBlog.Models.Departments.DepartmentFormModelRes" +
-                            "x", typeof(DepartmentFormModelResx).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Library.Web.Resources.Areas.LibraryBlog.Views.Employees.Edit.bg.", typeof(Edit_bg_).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -62,65 +61,11 @@ namespace Library.Web.Resources.Areas.LibraryBlog.Models.Departments {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Department name in Bulgarian.
+        ///   Looks up a localized string similar to Редактирай Служител.
         /// </summary>
-        public static string DepartmentBg {
+        public static string Edit_Employee {
             get {
-                return ResourceManager.GetString("DepartmentBg", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Department Email.
-        /// </summary>
-        public static string DepartmentEmail {
-            get {
-                return ResourceManager.GetString("DepartmentEmail", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Department name in English.
-        /// </summary>
-        public static string DepartmentEn {
-            get {
-                return ResourceManager.GetString("DepartmentEn", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Department Structure Type.
-        /// </summary>
-        public static string DepartmentStructureType {
-            get {
-                return ResourceManager.GetString("DepartmentStructureType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The {0} field can&apos;t be longer than {1} symbols..
-        /// </summary>
-        public static string MaxLengthErrorMsg {
-            get {
-                return ResourceManager.GetString("MaxLengthErrorMsg", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The {0} field can&apos;t be shorter than {1} symbols..
-        /// </summary>
-        public static string MinLengthErrorMsg {
-            get {
-                return ResourceManager.GetString("MinLengthErrorMsg", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The {0} is required..
-        /// </summary>
-        public static string RequiredErrorMsg {
-            get {
-                return ResourceManager.GetString("RequiredErrorMsg", resourceCulture);
+                return ResourceManager.GetString("Edit Employee", resourceCulture);
             }
         }
     }

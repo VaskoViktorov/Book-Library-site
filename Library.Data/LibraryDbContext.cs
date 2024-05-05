@@ -27,8 +27,6 @@
 
         public DbSet<Employee> Employees { get; set; }
 
-        public DbSet<EmployeePhone> EmployeePhones { get; set; }
-
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder
@@ -54,12 +52,6 @@
                 .HasOne(a => a.DepartmentStructure)
                 .WithMany(u => u.Employees)
                 .HasForeignKey(a => a.DepartmentStructureId);
-
-            builder
-                .Entity<EmployeePhone>()
-                .HasOne(a => a.Employee)
-                .WithMany(u => u.EmployeePhones)
-                .HasForeignKey(a => a.EmployeeId);
 
             base.OnModelCreating(builder);
         }

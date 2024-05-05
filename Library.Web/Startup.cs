@@ -229,6 +229,41 @@
                     defaults: new { area = "LibraryBlog", controller = "Articles", action = "Destroy" });
 
                 routes.MapRoute(
+                    name: "viewDepartment",
+                    template: "libraryblog/departments/departments",
+                    defaults: new { area = "LibraryBlog", controller = "Departments", action = "Departments" });
+
+                routes.MapRoute(
+                    name: "editDepartment",
+                    template: "libraryblog/departments/edit/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "Departments", action = "Edit" });
+
+                routes.MapRoute(
+                    name: "deleteDepartment",
+                    template: "libraryblog/departments/delete/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "Departments", action = "Delete" });
+
+                routes.MapRoute(
+                    name: "destroyDepartment",
+                    template: "libraryblog/departments/destroy/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "Departments", action = "Destroy" });
+
+                routes.MapRoute(
+                    name: "editEmployee",
+                    template: "libraryblog/employees/edit/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "Employees", action = "Edit" });
+
+                routes.MapRoute(
+                    name: "deleteEmployee",
+                    template: "libraryblog/employees/delete/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "Employees", action = "Delete" });
+
+                routes.MapRoute(
+                    name: "destroyEmployee",
+                    template: "libraryblog/employees/destroy/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "Employees", action = "Destroy" });
+
+                routes.MapRoute(
                     name: "viewBooks",
                     template: "libraryblog/books/books",
                     defaults: new { area = "LibraryBlog", controller = "Books", action = "Books" });

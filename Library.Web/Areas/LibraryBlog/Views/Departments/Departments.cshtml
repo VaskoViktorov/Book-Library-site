@@ -1,8 +1,8 @@
 ﻿@model DepartmentListingViewModel
 @inject IViewLocalizer Localizer
 @{
-    ViewData["Title"] = Localizer["Departments"];
-    ViewData["Description"] = Localizer["Library's departments"].Value;
+    ViewData["Title"] = Localizer["Contacts"];
+    ViewData["Description"] = Localizer["List with contact information for the staff of Regional Library \'Mihalaki Georgiev\' - Vidin"];
 }
 
 <div class="row text-center mr-t-b-25">
@@ -14,3 +14,4 @@
 <div class="row">
     @Html.Partial("_DepartmentsListingView", Model) 
 </div>
+

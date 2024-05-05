@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Library.Web.Resources.Areas.LibraryBlog.Models.Departments {
+namespace Library.Web.Resources.Areas.LibraryBlog.Models.Employees {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Library.Web.Resources.Areas.LibraryBlog.Models.Departments {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class DepartmentFormModelResx {
+    public class EmployeeFormModelResx {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal DepartmentFormModelResx() {
+        internal EmployeeFormModelResx() {
         }
         
         /// <summary>
@@ -39,8 +39,7 @@ namespace Library.Web.Resources.Areas.LibraryBlog.Models.Departments {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Library.Web.Resources.Areas.LibraryBlog.Models.Departments.DepartmentFormModelRes" +
-                            "x", typeof(DepartmentFormModelResx).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Library.Web.Resources.Areas.LibraryBlog.Models.Employees.EmployeeFormModelResx", typeof(EmployeeFormModelResx).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -62,38 +61,56 @@ namespace Library.Web.Resources.Areas.LibraryBlog.Models.Departments {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Department name in Bulgarian.
+        ///   Looks up a localized string similar to Department.
         /// </summary>
-        public static string DepartmentBg {
+        public static string DepartmentStructures {
             get {
-                return ResourceManager.GetString("DepartmentBg", resourceCulture);
+                return ResourceManager.GetString("DepartmentStructures", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Department Email.
+        ///   Looks up a localized string similar to Department.
         /// </summary>
-        public static string DepartmentEmail {
+        public static string EmployeeDepartmentStructureId {
             get {
-                return ResourceManager.GetString("DepartmentEmail", resourceCulture);
+                return ResourceManager.GetString("EmployeeDepartmentStructureId", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Department name in English.
+        ///   Looks up a localized string similar to Employee name in bulgarian.
         /// </summary>
-        public static string DepartmentEn {
+        public static string EmployeeNameBg {
             get {
-                return ResourceManager.GetString("DepartmentEn", resourceCulture);
+                return ResourceManager.GetString("EmployeeNameBg", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Department Structure Type.
+        ///   Looks up a localized string similar to Employee name in english.
         /// </summary>
-        public static string DepartmentStructureType {
+        public static string EmployeeNameEn {
             get {
-                return ResourceManager.GetString("DepartmentStructureType", resourceCulture);
+                return ResourceManager.GetString("EmployeeNameEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order number in department.
+        /// </summary>
+        public static string EmployeeOrder {
+            get {
+                return ResourceManager.GetString("EmployeeOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone numbers.
+        /// </summary>
+        public static string EmployeePhoneNumbers {
+            get {
+                return ResourceManager.GetString("EmployeePhoneNumbers", resourceCulture);
             }
         }
         

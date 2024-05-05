@@ -117,25 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DepartmentBg" xml:space="preserve">
-    <value>Department name in Bulgarian</value>
-  </data>
-  <data name="DepartmentEmail" xml:space="preserve">
-    <value>Department Email</value>
-  </data>
-  <data name="DepartmentEn" xml:space="preserve">
-    <value>Department name in English</value>
-  </data>
-  <data name="DepartmentStructureType" xml:space="preserve">
-    <value>Department Structure Type</value>
-  </data>
-  <data name="MaxLengthErrorMsg" xml:space="preserve">
-    <value>The {0} field can't be longer than {1} symbols.</value>
-  </data>
-  <data name="MinLengthErrorMsg" xml:space="preserve">
-    <value>The {0} field can't be shorter than {1} symbols.</value>
-  </data>
-  <data name="RequiredErrorMsg" xml:space="preserve">
-    <value>The {0} is required.</value>
+  <data name="Edit Employee" xml:space="preserve">
+    <value>Редактирай Служител</value>
   </data>
 </root>
