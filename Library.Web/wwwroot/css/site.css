@@ -408,12 +408,18 @@ ol {
     .img-border:hover {
         border-color: lightgray;
     }
+.inl-flx {
+    display: inline-flex;
 
+}
 .p-10-table {
     padding-left: 30px;
     padding-right: 30px;
 }
-
+.m-a-table {
+    margin: auto;
+    width: 95%;
+}
 .p-0-3 {
     padding: 0 3px;
 }

@@ -22,8 +22,6 @@
         [Display(Name = "EmployeeNameEn", ResourceType = typeof(EmployeeFormModelResx))]
         public string EmployeeNameEn { get; set; }
 
-        [Required(ErrorMessageResourceName = "RequiredErrorMsg", ErrorMessageResourceType = typeof(EmployeeFormModelResx))]
-        [MinLength(DepartmentStructureDepartmentEmailMinLength, ErrorMessageResourceName = "MinLengthErrorMsg", ErrorMessageResourceType = typeof(EmployeeFormModelResx))]
         [MaxLength(DepartmentStructureDepartmentEmailMaxLength, ErrorMessageResourceName = "MaxLengthErrorMsg", ErrorMessageResourceType = typeof(EmployeeFormModelResx))]
         [Display(Name = "EmployeePhoneNumbers", ResourceType = typeof(EmployeeFormModelResx))]
         public string EmployeePhoneNumbers { get; set; }

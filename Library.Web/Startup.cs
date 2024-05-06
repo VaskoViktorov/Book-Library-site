@@ -226,7 +226,7 @@
                 routes.MapRoute(
                     name: "destroyArticle",
                     template: "libraryblog/articles/destroy/{id}",
-                    defaults: new { area = "LibraryBlog", controller = "Articles", action = "Destroy" });
+                    defaults: new { area = "LibraryBlog", controller = "Articles", action = "Destroy" }); 
 
                 routes.MapRoute(
                     name: "viewDepartment",

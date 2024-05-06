@@ -18,7 +18,6 @@
         [MaxLength(DepartmentStructureDepartmentUnitMaxLength)]
         public string DepartmentUnitEn { get; set; }
 
-        [MinLength(DepartmentStructureDepartmentEmailMinLength)]
         [MaxLength(DepartmentStructureDepartmentEmailMaxLength)]
         public string DepartmentEmail { get; set; }
 

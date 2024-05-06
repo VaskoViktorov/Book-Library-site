@@ -21,7 +21,6 @@
         public string DepartmentUnitEn { get; set; }
 
         [Required(ErrorMessageResourceName = "RequiredErrorMsg", ErrorMessageResourceType = typeof(DepartmentFormModelResx))]
-        [MinLength(DepartmentStructureDepartmentEmailMinLength, ErrorMessageResourceName = "MinLengthErrorMsg", ErrorMessageResourceType = typeof(DepartmentFormModelResx))]
         [MaxLength(DepartmentStructureDepartmentEmailMaxLength, ErrorMessageResourceName = "MaxLengthErrorMsg", ErrorMessageResourceType = typeof(DepartmentFormModelResx))]
         [Display(Name = "DepartmentEmail", ResourceType = typeof(DepartmentFormModelResx))]
         public string DepartmentEmail { get; set; }

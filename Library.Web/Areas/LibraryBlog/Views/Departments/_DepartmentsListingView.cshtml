@@ -3,7 +3,17 @@
 @{
     var currentCulture = Context.Features.Get<IRequestCultureFeature>().RequestCulture.UICulture.Name;
 }
-<div class="row p-10-table">
+<div class="row text-center">
+    <h2>@ViewData["Title"]</h2>
+</div>
+<div class="row text-center mr-t-b-25 center-block">
+    @if (User.IsInRole(WebConstants.AdministratorRole))
+    {
+        <a class="btn-sm btn-success mr-l-25" asp-area="LibraryBlog" asp-controller="Departments" asp-action="Create">@Localizer["Create Department"]</a>
+        <a class="btn-sm btn-success mr-l-25" asp-area="LibraryBlog" asp-controller="Employees" asp-action="Create">@Localizer["Create Employee"]</a>
+    }
+</div>
+<div class="row m-a-table">
     <table class="table table-condensed table-responsive vertical-align-middle">
         <thead>
             <tr>
@@ -44,6 +54,13 @@
                                     @department.DepartmentUnitEn
                                 }
                             }
+                            @if (User.IsInRole(WebConstants.AdministratorRole))
+                            {
+                                <div class="inl-flx">
+                                    <a class="btn-sm btn-warning mr-l-25" asp-area="LibraryBlog" asp-controller="Departments" asp-action="Edit" asp-route-id="@department.Id">@Localizer["Edit Department"]</a>
+                                    <a class="btn-sm btn-danger mr-l-25" asp-area="LibraryBlog" asp-controller="Departments" asp-action="Delete" asp-route-id="@department.Id">@Localizer["Delete Department"]</a>
+                                </div>
+                            }
                         </th>
                         <td class="vertical-align-middle lib-cell-corrector">
                             @{
@@ -70,7 +87,13 @@
 
 
                             }
-
+                            @if (User.IsInRole(WebConstants.AdministratorRole) && emplsCount > 0)
+                            {
+                                <div class="inl-flx">
+                                    <a class="btn-sm btn-warning mr-l-25" asp-area="LibraryBlog" asp-controller="Employees" asp-action="Edit" asp-route-id="@department.Employees.First().Id">@Localizer["Edit Employee"]</a>
+                                    <a class="btn-sm btn-danger mr-l-25" asp-area="LibraryBlog" asp-controller="Employees" asp-action="Delete" asp-route-id="@department.Employees.First().Id">@Localizer["Delete Employee"]</a>
+                                </div>
+                            }
                         </td>
                         <td class="vertical-align-middle lib-cell-corrector">@phoneNumber</td>
                         <td class="vertical-align-middle lib-cell-corrector" rowspan="@expectedCount"><a>@department.DepartmentEmail</a></td>
@@ -89,7 +112,13 @@
                                         @employee.NameEn
                                     }
                                 }
-
+                                @if (User.IsInRole(WebConstants.AdministratorRole))
+                                {
+                                    <div class="inl-flx">
+                                        <a class="btn-sm btn-warning mr-l-25" asp-area="LibraryBlog" asp-controller="Employees" asp-action="Edit" asp-route-id="@employee.Id">@Localizer["Edit Employee"]</a>
+                                        <a class="btn-sm btn-danger mr-l-25" asp-area="LibraryBlog" asp-controller="Employees" asp-action="Delete" asp-route-id="@employee.Id">@Localizer["Delete Employee"]</a>
+                                    </div>
+                                }
                             </td>
                             <td class="vertical-align-middle lib-cell-corrector">@employee.PhoneNumbers</td>
                         </tr>

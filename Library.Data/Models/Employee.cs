@@ -18,8 +18,6 @@
         [MaxLength(EmployeeNameMaxLength)]
         public string NameEn { get; set; }
 
-        [Required]
-        [MinLength(EmployeePhoneMinLengt)]
         [MaxLength(EmployeePhoneMaxLengt)]
         public string PhoneNumbers { get; set; }
 

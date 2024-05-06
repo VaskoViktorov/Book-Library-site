@@ -2,6 +2,7 @@
 {
     using Infrastructure.Extensions;
     using Infrastructure.Filters;
+    using Library.Web.Areas.LibraryBlog.Controllers;
     using Microsoft.AspNetCore.Http;
     using Microsoft.AspNetCore.Localization;
     using Microsoft.AspNetCore.Mvc;
@@ -133,8 +134,10 @@
             => View();
            
         public IActionResult Staff()
-            => View();
-
+        {
+            var url = Url.RouteUrl("areas", new { controller = "departments", action = nameof(DepartmentsController.Departments), area = nameof(Areas.LibraryBlog) });
+            return RedirectPermanent(url);
+        }
         public IActionResult Faq()
             => View();
 
