@@ -1,0 +1,66 @@
+﻿@model LibServiceDescriptionFormModel
+@inject IViewLocalizer Localizer
+@{
+    var currentCulture = Context.Features.Get<IRequestCultureFeature>().RequestCulture.UICulture.Name;
+}
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="ServiceTypeBg"></label>
+        <input asp-for="ServiceTypeBg" class="form-control" />
+        <span asp-validation-for="ServiceTypeBg" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ServiceTypeEn"></label>
+        <input asp-for="ServiceTypeEn" class="form-control" />
+        <span asp-validation-for="ServiceTypeEn" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DescriptionBg"></label>
+        <input asp-for="DescriptionBg" class="form-control" />
+        <span asp-validation-for="DescriptionBg" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DescriptionEn"></label>
+        <input asp-for="DescriptionEn" class="form-control" />
+        <span asp-validation-for="DescriptionEn" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PriceInfoBg"></label>
+        <input asp-for="PriceInfoBg" class="form-control" />
+        <span asp-validation-for="PriceInfoBg" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PriceInfoEn"></label>
+        <input asp-for="PriceInfoEn" class="form-control" />
+        <span asp-validation-for="PriceInfoEn" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Order"></label>
+        <input asp-for="Order" class="form-control" type="number"/>
+        <span asp-validation-for="Order" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="LibServiceTypeId"></label>
+        @foreach (var libServiceType in Model.LibServiceTypes)
+        {
+
+            if (currentCulture == "bg-BG")
+            {
+                <div class="row mr-l-0">
+                    @(Html.RadioButtonFor(l => l.LibServiceTypeId, libServiceType.Id))@libServiceType.ServiceNameBg
+                </div>
+            }
+            else
+            {
+                <div class="row mr-l-0">
+                    @(Html.RadioButtonFor(l => l.LibServiceTypeId, libServiceType.Id))@libServiceType.ServiceNameEn
+                </div>
+            }
+
+        }
+        <span asp-validation-for="LibServiceTypeId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-info">@Localizer["Save"]</button>
+    <a class="btn btn-default btn-sm" href="javascript:history.go(-1)">@Localizer["Back"]</a>
+</form>
+

@@ -27,6 +27,10 @@
 
         public DbSet<Employee> Employees { get; set; }
 
+        public DbSet<LibServiceType> LibServiceTypes { get; set; }
+
+        public DbSet<LibServiceDescription> LibServiceDescriptions { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder
@@ -52,6 +56,12 @@
                 .HasOne(a => a.DepartmentStructure)
                 .WithMany(u => u.Employees)
                 .HasForeignKey(a => a.DepartmentStructureId);
+
+            builder
+               .Entity<LibServiceDescription>()
+               .HasOne(a => a.LibServiceType)
+               .WithMany(u => u.LibServiceDescriptions)
+               .HasForeignKey(a => a.LibServiceTypeId);
 
             base.OnModelCreating(builder);
         }

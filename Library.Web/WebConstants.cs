@@ -104,6 +104,8 @@ namespace Library.Web
         public const string BookBgModelName = "Книгата";
         public const string ArticleBgModelName = "Статията";
         public const string DepartmentBgModelName = "Отдела";
+        public const string LibServiceTypeBgModelName = "Библио услугата";
+        public const string LibServiceDescriptionBgModelName = "Библио описанието";
         public const string EmployeeBgModelName = "Служителя";
         public const string EventBgModelName = "Събитието";
         public const string GalleryBgModelName = "Галерията";

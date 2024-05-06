@@ -58,9 +58,13 @@
                 return;
             }
 
+            foreach (var employee in departmentStructure.Employees)
+            {
+                db.Employees.Remove(employee);
+            }
+
             db.DepartmentStructures.Remove(departmentStructure);
             await db.SaveChangesAsync();
-            // TODO delete employees and phones
         }
 
         public async Task<DepartmentStructureServiceModel> ByIdAsync(int id)

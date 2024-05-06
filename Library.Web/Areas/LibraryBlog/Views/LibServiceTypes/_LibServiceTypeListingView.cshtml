@@ -1,0 +1,32 @@
+﻿@model LibServiceTypeListingViewModel
+@inject IViewLocalizer Localizer
+@{
+    var currentCulture = Context.Features.Get<IRequestCultureFeature>().RequestCulture.UICulture.Name;
+}
+<div class="row text-center">
+    <h2>@ViewData["Title"]</h2>
+</div>
+<div class="row text-center mr-t-b-25 center-block">
+    @if (User.IsInRole(WebConstants.AdministratorRole))
+    {
+        <a class="btn-sm btn-success mr-l-25" asp-area="LibraryBlog" asp-controller="LibServiceTypes" asp-action="Create">@Localizer["Create Lib Service Type"]</a>
+        <a class="btn-sm btn-success mr-l-25" asp-area="LibraryBlog" asp-controller="LibServiceDescriptions" asp-action="Create">@Localizer["Create Lib Service Description"]</a>
+    }
+    @foreach (var libServiceType in Model.LibServiceTypes)
+    {
+        <p>@libServiceType.ServiceNameBg</p>
+        <a class="btn-sm btn-warning mr-l-25" asp-area="LibraryBlog" asp-controller="LibServiceTypes" asp-action="Edit" asp-route-id="@libServiceType.Id">@Localizer["Edit Lib Service Type"]</a>
+        <a class="btn-sm btn-danger mr-l-25" asp-area="LibraryBlog" asp-controller="LibServiceTypes" asp-action="Delete" asp-route-id="@libServiceType.Id">@Localizer["Delete Lib Service Description"]</a>
+
+        foreach(var libServiceDescription in libServiceType.LibServiceDescriptions )
+        {
+            @libServiceDescription.ServiceTypeBg 
+            <br />
+            @libServiceDescription.DescriptionBg
+            <br />
+            @libServiceDescription.PriceInfoBg
+        }
+    }
+
+
+</div>

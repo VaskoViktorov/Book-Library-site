@@ -70,6 +70,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>GalleryFormModelResx.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\Areas\LibraryBlog\Models\LibServiceDescriptions\LibServiceDescriptionFormModelResx.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LibServiceDescriptionFormModelResx.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Areas\LibraryBlog\Models\LibServiceTypes\LibServiceTypeFormModelResx.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LibServiceTypeFormModelResx.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resources\Areas\LibraryBlog\Models\Subscriptions\SubscriptionFormModelResx.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -183,6 +193,20 @@
     <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\Galleries\GalleryFormModelResx.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>GalleryFormModelResx.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\LibServiceDescriptions\LibServiceDescriptionFormModelResx.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\LibServiceDescriptions\LibServiceDescriptionFormModelResx.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LibServiceDescriptionFormModelResx.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\LibServiceTypes\LibServiceTypeFormModelResx.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LibServiceTypeFormModelResx.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\LibServiceTypes\LibServiceTypeFormModelResx.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\Subscriptions\SubscriptionFormModelResx.bg.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

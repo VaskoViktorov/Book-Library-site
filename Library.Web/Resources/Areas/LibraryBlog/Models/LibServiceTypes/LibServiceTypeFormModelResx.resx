@@ -117,31 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DepartmentStructures" xml:space="preserve">
-    <value>Отдел</value>
-  </data>
-  <data name="EmployeeDepartmentStructureId" xml:space="preserve">
-    <value>ИД на отдел</value>
-  </data>
-  <data name="EmployeeNameBg" xml:space="preserve">
-    <value>Име на служител на български</value>
-  </data>
-  <data name="EmployeeNameEn" xml:space="preserve">
-    <value>Име на служител на английски</value>
-  </data>
-  <data name="EmployeeOrder" xml:space="preserve">
-    <value>Пореден номер на служител</value>
-  </data>
-  <data name="EmployeePhoneNumbers" xml:space="preserve">
-    <value>Телефонни номера</value>
-  </data>
   <data name="MaxLengthErrorMsg" xml:space="preserve">
-    <value>Полето "{0}" не може да е по - дълго от {1} символа.</value>
+    <value>The {0} field can't be longer than {1} symbols.</value>
   </data>
   <data name="MinLengthErrorMsg" xml:space="preserve">
-    <value>Полето "{0}" не може да е по - кратко от {1} символа.</value>
+    <value>The {0} field can't be shorter than {1} symbols.</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Order</value>
   </data>
   <data name="RequiredErrorMsg" xml:space="preserve">
-    <value>Полето "{0}", е задължително.</value>
+    <value>The {0} is required.</value>
+  </data>
+  <data name="ServiceNameBg" xml:space="preserve">
+    <value>Service name in bulgarian</value>
+  </data>
+  <data name="ServiceNameEn" xml:space="preserve">
+    <value>Service name in english</value>
   </data>
 </root>

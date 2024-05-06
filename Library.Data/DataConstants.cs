@@ -2,6 +2,14 @@
 {
     public class DataConstants
     {
+        public const int ServiceTypeMinLength = 3;
+        public const int ServiceTypeMaxLength = 100;
+        public const int DescriptionMaxLength = 700;
+        public const int PriceInfoMaxLength = 80;
+
+        public const int LibServiceTypeMinLength = 3;
+        public const int LibServiceTypeMaxLength = 100;
+
         public const int EmployeeNameMinLength = 10;
         public const int EmployeeNameMaxLength = 150;
         public const int EmployeePhoneMaxLengt = 100; 

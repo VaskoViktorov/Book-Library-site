@@ -249,6 +249,41 @@
                     defaults: new { area = "LibraryBlog", controller = "Departments", action = "Destroy" });
 
                 routes.MapRoute(
+                    name: "viewLibServiceType",
+                    template: "libraryblog/libservicetypes/libservicetypes",
+                    defaults: new { area = "LibraryBlog", controller = "LibServiceTypes", action = "LibServiceTypes" });
+
+                routes.MapRoute(
+                    name: "editLibServiceType",
+                    template: "libraryblog/libservicetypes/edit/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "LibServiceTypes", action = "Edit" });
+
+                routes.MapRoute(
+                    name: "deleteLibServiceType",
+                    template: "libraryblog/libservicetypes/delete/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "LibServiceTypes", action = "Delete" });
+
+                routes.MapRoute(
+                    name: "destroyLibServiceType",
+                    template: "libraryblog/libservicetypes/destroy/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "LibServiceTypes", action = "Destroy" });
+
+                routes.MapRoute(
+                    name: "editLibServiceDescription",
+                    template: "libraryblog/libservicedescriptions/edit/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "LibServiceDescriptions", action = "Edit" });
+
+                routes.MapRoute(
+                    name: "deleteLibServiceDescription",
+                    template: "libraryblog/libservicedescriptions/delete/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "LibServiceDescriptions", action = "Delete" });
+
+                routes.MapRoute(
+                    name: "destroyLibServiceDescription",
+                    template: "libraryblog/libservicedescriptions/destroy/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "LibServiceDescriptions", action = "Destroy" });
+
+                routes.MapRoute(
                     name: "editEmployee",
                     template: "libraryblog/employees/edit/{id}",
                     defaults: new { area = "LibraryBlog", controller = "Employees", action = "Edit" });
