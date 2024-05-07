@@ -32,9 +32,12 @@ namespace Library.Web
         public const string ForeignDepartment = "Чуждоезиков";
 
         //DepartmentStructureType names
-        public const string AdministrationStructureDepartment = "Администрация";
-        public const string ServiceStructureDepartment = "Обслужващи звена";
-        public const string SpecializedStructureDepartment = "Специализирани звена";
+        public const string AdministrationStructureDepartmentBg = "Администрация";
+        public const string ServiceStructureDepartmentBg = "Обслужващи звена";
+        public const string SpecializedStructureDepartmentBg = "Специализирани звена";
+        public const string AdministrationStructureDepartmentEn = "Administartion";
+        public const string ServiceStructureDepartmentEn = "Serving units";
+        public const string SpecializedStructureDepartmentEn = "Specialized units";
         //Culture short/long name
         public const string BulgarianLanguage = "bg";
         public const string BulgarianCulture = "bg-BG";

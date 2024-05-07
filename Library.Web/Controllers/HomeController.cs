@@ -96,12 +96,8 @@
 
         public IActionResult PriceList()
         {
-            var rawHtml = FormFileExtensions.ReadTxtFile(PriceListPagePath);
-
-            return View(new RawHtmlViewModel
-            {
-                Html = rawHtml
-            });
+            var url = Url.RouteUrl("areas", new { controller = "libservicetypes", action = nameof(LibServiceTypesController.LibServiceTypes), area = nameof(Areas.LibraryBlog) });
+            return RedirectPermanent(url);
         }
 
         public IActionResult ProgramForKids()

@@ -60,11 +60,25 @@
             switch (text)
             {
                 case DepartmentStructureType.Administration:
-                    return AdministrationStructureDepartment;
+                    return AdministrationStructureDepartmentBg;
                 case DepartmentStructureType.SpecializedUnits:
-                    return SpecializedStructureDepartment;
+                    return SpecializedStructureDepartmentBg;
                 case DepartmentStructureType.ServiceUnits:
-                    return ServiceStructureDepartment;               
+                    return ServiceStructureDepartmentBg;               
+            }
+
+            return String.Empty;
+        }
+        public static string DepartmentsStructureTypeToEnLang(this DepartmentStructureType text)
+        {
+            switch (text)
+            {
+                case DepartmentStructureType.Administration:
+                    return AdministrationStructureDepartmentEn;
+                case DepartmentStructureType.SpecializedUnits:
+                    return SpecializedStructureDepartmentEn;
+                case DepartmentStructureType.ServiceUnits:
+                    return ServiceStructureDepartmentEn;
             }
 
             return String.Empty;

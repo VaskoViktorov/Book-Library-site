@@ -71,7 +71,8 @@
                 PriceInfoBg = libServiceDescription.PriceInfoBg,
                 PriceInfoEn = libServiceDescription.PriceInfoEn,
                 Order = libServiceDescription.Order,
-                LibServiceTypes = listLibServiceTypes
+                LibServiceTypes = listLibServiceTypes,
+                LibServiceTypeId = libServiceDescription.LibServiceTypeId
             });
         }
         

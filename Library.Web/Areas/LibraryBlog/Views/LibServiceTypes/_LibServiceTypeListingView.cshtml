@@ -12,21 +12,74 @@
         <a class="btn-sm btn-success mr-l-25" asp-area="LibraryBlog" asp-controller="LibServiceTypes" asp-action="Create">@Localizer["Create Lib Service Type"]</a>
         <a class="btn-sm btn-success mr-l-25" asp-area="LibraryBlog" asp-controller="LibServiceDescriptions" asp-action="Create">@Localizer["Create Lib Service Description"]</a>
     }
-    @foreach (var libServiceType in Model.LibServiceTypes)
-    {
-        <p>@libServiceType.ServiceNameBg</p>
-        <a class="btn-sm btn-warning mr-l-25" asp-area="LibraryBlog" asp-controller="LibServiceTypes" asp-action="Edit" asp-route-id="@libServiceType.Id">@Localizer["Edit Lib Service Type"]</a>
-        <a class="btn-sm btn-danger mr-l-25" asp-area="LibraryBlog" asp-controller="LibServiceTypes" asp-action="Delete" asp-route-id="@libServiceType.Id">@Localizer["Delete Lib Service Description"]</a>
-
-        foreach(var libServiceDescription in libServiceType.LibServiceDescriptions )
-        {
-            @libServiceDescription.ServiceTypeBg 
-            <br />
-            @libServiceDescription.DescriptionBg
-            <br />
-            @libServiceDescription.PriceInfoBg
-        }
-    }
-
-
 </div>
+<div class="row m-a-table">
+    <table class="table table-condensed table-responsive vertical-align-middle">
+        <thead>
+            <tr>
+                <th class="text-center first-color-b second-color">@Localizer["Type"]</th>
+                <th class="text-center first-color-b second-color">@Localizer["Description"]</th>
+                <th class="text-center first-color-b second-color">@Localizer["Price"]</th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var libServiceType in Model.LibServiceTypes.OrderBy(x => x.Order))
+    {   <tr>
+            <th colspan="3" class="text-center" style="background-color: #29739E; color: #FFEDD8 !important;">
+                @if (currentCulture == "bg-BG")
+                {
+                    @libServiceType.ServiceNameBg
+                }
+                else
+                {
+                    @libServiceType.ServiceNameEn
+
+                }
+                @if (User.IsInRole(WebConstants.AdministratorRole))
+                {
+                <a class="btn-sm btn-warning mr-l-25" asp-area="LibraryBlog" asp-controller="LibServiceTypes" asp-action="Edit" asp-route-id="@libServiceType.Id">@Localizer["Edit Lib Service Type"]</a>
+                <a class="btn-sm btn-danger mr-l-25" asp-area="LibraryBlog" asp-controller="LibServiceTypes" asp-action="Delete" asp-route-id="@libServiceType.Id">@Localizer["Delete Lib Service Type"]</a>
+                }
+            </th>
+        </tr>
+        
+        @foreach (var libServiceDescription in libServiceType.LibServiceDescriptions.Where(d => d.LibServiceTypeId.Equals(libServiceType.Id)).OrderBy(x => x.Order))
+        {
+            <tr>
+            @if (currentCulture == "bg-BG")
+            {
+                <td class="vertical-align-middle">@libServiceDescription.ServiceTypeBg
+                    @if (User.IsInRole(WebConstants.AdministratorRole))
+                    {
+                        <div class="inl-flx">
+                            <a class="btn-sm btn-warning mr-l-25" asp-area="LibraryBlog" asp-controller="LibServiceDescriptions" asp-action="Edit" asp-route-id="@libServiceDescription.Id">@Localizer["Edit Lib Service Description"]</a>
+                            <a class="btn-sm btn-danger mr-l-25" asp-area="LibraryBlog" asp-controller="LibServiceDescriptions" asp-action="Delete" asp-route-id="@libServiceDescription.Id">@Localizer["Delete Lib Service Description"]</a>
+                        </div>
+                    }
+                </td>
+                <td class="vertical-align-middle lib-cell-corrector">@libServiceDescription.DescriptionBg</td>
+                <td class="vertical-align-middle lib-cell-corrector">@libServiceDescription.PriceInfoBg</td>
+            }
+            else
+            {   
+                <td class="vertical-align-middle">@libServiceDescription.ServiceTypeEn
+                    @if (User.IsInRole(WebConstants.AdministratorRole))
+                    {
+                        <div class="inl-flx">
+                            <a class="btn-sm btn-warning mr-l-25" asp-area="LibraryBlog" asp-controller="LibServiceDescriptions" asp-action="Edit" asp-route-id="@libServiceDescription.Id">@Localizer["Edit Lib Service Description"]</a>
+                            <a class="btn-sm btn-danger mr-l-25" asp-area="LibraryBlog" asp-controller="LibServiceDescriptions" asp-action="Delete" asp-route-id="@libServiceDescription.Id">@Localizer["Delete Lib Service Description"]</a>
+                        </div>
+                    }
+                </td>
+                <td class="vertical-align-middle lib-cell-corrector">@libServiceDescription.DescriptionEn</td>
+                <td class="vertical-align-middle lib-cell-corrector">@libServiceDescription.PriceInfoEn</td>
+            }  
+             </tr>
+        }
+       
+    }
+    </tbody>
+    </table>
+</div>
+
+

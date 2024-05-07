@@ -335,6 +335,33 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>_GalleryForm.bg.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\LibServiceDescriptions\Create.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\LibServiceDescriptions\Delete.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\LibServiceDescriptions\Edit.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\LibServiceDescriptions\_LibServiceDescriptionForm.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\LibServiceTypes\Create.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\LibServiceTypes\Delete.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\LibServiceTypes\Edit.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\LibServiceTypes\LibServiceTypes.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\LibServiceTypes\_LibServiceTypeForm.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Search\Search.bg.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
