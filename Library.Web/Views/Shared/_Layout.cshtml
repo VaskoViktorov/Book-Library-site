@@ -88,16 +88,7 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" role="button">
                             <span class="glyphicon glyphicon-time clock-ico"></span><span class="caret"></span>
                         </a>
-                        <ul id="worktime-menu" class="dropdown-menu drop">
-                            <li class="p-0-3"><span class="bold">@Localizer["Monday"]: </span>9:00-18:00</li>
-                            <li class="p-0-3"><span class="bold">@Localizer["Tuesday"]: </span>9:00-18:00</li>
-                            <li class="p-0-3"><span class="bold">@Localizer["Wednesday"]: </span>9:00-18:00</li>
-                            <li class="p-0-3"><span class="bold">@Localizer["Thursday"]: </span>9:00-18:00</li>
-                            <li class="p-0-3"><span class="bold">@Localizer["Friday"]: </span>9:00-18:00</li>
-                            <li class="p-0-3"><span class="bold">@Localizer["Saturday"]: </span>9:00-14:00</li>
-                            <li class="p-0-3"><span class="bold">@Localizer["Sunday"]</span>@Localizer[": Closed"]</li>
-                            <li class="p-0-3 text-center"><a tabindex="-1" asp-area="" asp-controller="Home" asp-action="WorkTime" role="button">@Localizer["See More"]</a></li>
-                        </ul>
+                        @await Component.InvokeAsync("WorkTime")
                     </div>
                 </div>
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand p-0-3 hidden-lg hidden-md ico-style"><img src="~/images/SiteImages/LogoRBMG.png" alt="logo" /></a>
@@ -124,8 +115,8 @@
                                 <a class="test" tabindex="-1">@Localizer["Useful information"]</a>
                                 <ul class="dropdown-menu">
                                     <li><a tabindex="-1" asp-area="" asp-controller="Home" asp-action="Contact">@Localizer["Find us"]</a></li>
-                                    <li><a tabindex="-1" asp-area="" asp-controller="Home" asp-action="WorkTime">@Localizer["Opening hours"]</a></li>
-                                    <li><a tabindex="-1" asp-area="" asp-controller="Home" asp-action="PriceList">@Localizer["Price list"]</a></li>
+                                    <li><a tabindex="-1" asp-area="LibraryBlog" asp-controller="WorkSchedules" asp-action="WorkSchedules">@Localizer["Opening hours"]</a></li>
+                                    <li><a tabindex="-1" asp-area="LibraryBlog" asp-controller="LibServiceTypes" asp-action="LibServiceTypes">@Localizer["Price list"]</a></li>
                                     <li><a tabindex="-1" asp-area="LibraryBlog" asp-controller="Departments" asp-action="Departments">@Localizer["Contacts"]</a></li>
                                     <li><a tabindex="-1" asp-area="" asp-controller="Home" asp-action="Faq">@Localizer["FAQ"]</a></li>
                                     <li><a tabindex="-1" asp-area="" asp-controller="Home" asp-action="Links">@Localizer["Useful links"]</a></li>

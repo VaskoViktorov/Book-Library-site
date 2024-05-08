@@ -1,0 +1,11 @@
+﻿@model WorkScheduleListingViewModel
+@inject IViewLocalizer Localizer
+@{
+    ViewData["Title"] = Localizer["Opening hours"];
+    ViewData["Description"] = Localizer["Opening hours of all departments in the 'Mihalaki Georgiev' Regional Library - Vidin"];
+}
+
+<div class="row">
+    @Html.Partial("_WorkScheduleListingView", Model)
+</div>
+

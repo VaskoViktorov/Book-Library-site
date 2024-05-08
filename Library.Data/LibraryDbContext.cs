@@ -31,6 +31,8 @@
 
         public DbSet<LibServiceDescription> LibServiceDescriptions { get; set; }
 
+        public DbSet<WorkSchedule> WorkSchedules { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder

@@ -2,6 +2,9 @@
 {
     public class DataConstants
     {
+        public const int WorkScheduleMinLength = 3;
+        public const int WorkScheduleMaxLength = 150;
+
         public const int ServiceTypeMinLength = 3;
         public const int ServiceTypeMaxLength = 100;
         public const int DescriptionMaxLength = 700;

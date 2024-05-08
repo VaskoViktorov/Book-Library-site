@@ -2,8 +2,6 @@
 {
     using Common.Mapping;
     using Data.Models;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
 
     public class LibServiceDescriptionServiceModel : IMapFrom<LibServiceDescription>
     {

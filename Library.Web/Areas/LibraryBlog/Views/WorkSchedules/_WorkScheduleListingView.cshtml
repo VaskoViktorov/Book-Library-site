@@ -1,0 +1,73 @@
+﻿@model WorkScheduleListingViewModel
+@inject IViewLocalizer Localizer
+@{
+    var currentCulture = Context.Features.Get<IRequestCultureFeature>().RequestCulture.UICulture.Name;
+}
+<div class="row text-center">
+    <h2>@ViewData["Title"]</h2>
+</div>
+<div class="row text-center mr-t-b-25 center-block">
+    @if (User.IsInRole(WebConstants.AdministratorRole))
+    {
+        <a class="btn-sm btn-success mr-l-25" asp-area="LibraryBlog" asp-controller="WorkSchedules" asp-action="Create">@Localizer["Create Work Schedule"]</a>
+    }
+</div>
+<div class="row m-a-table">
+    <table class="table-hover mr-10-auto table-condensed ">
+        <thead>
+            <tr>
+                <th colspan="4" class="text-center first-color-b second-color">@Localizer["Library opening hours*"]</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-center first-color-b second-color">@Localizer["Department"]</td>
+                <td class="text-center first-color-b second-color">@Localizer["Monday - Friday"]</td>
+                <td class="text-center first-color-b second-color">@Localizer["Saturday"]</td>
+                <td class="text-center first-color-b second-color">@Localizer["Sunday"]</td>
+            </tr>
+    @foreach (var workSchedule in Model.WorkSchedules)
+    {   
+                @if (workSchedule.DepartmentNameEn == "General")
+                {
+                    continue;
+                }
+                <tr>
+        @if (currentCulture == "bg-BG")
+        {
+            <td class="vertical-align-middle">@workSchedule.DepartmentNameBg
+                @if (User.IsInRole(WebConstants.AdministratorRole))
+                {
+                    <div class="inl-flx">
+                        <a class="btn-sm btn-warning mr-l-25" asp-area="LibraryBlog" asp-controller="WorkSchedules" asp-action="Edit" asp-route-id="@workSchedule.Id">@Localizer["Edit Work Schedule"]</a>
+                        <a class="btn-sm btn-danger mr-l-25" asp-area="LibraryBlog" asp-controller="WorkSchedules" asp-action="Delete" asp-route-id="@workSchedule.Id">@Localizer["Delete Work Schedule"]</a>
+                    </div>
+                }
+            </td>
+            <td class="vertical-align-middle lib-cell-corrector">@workSchedule.WorkdaysBg</td>
+            <td class="vertical-align-middle lib-cell-corrector">@workSchedule.SaturdayBg</td>
+                        <td class="vertical-align-middle lib-cell-corrector">@workSchedule.SundayBg</td>
+        }
+        else
+        {   
+            <td class="vertical-align-middle">@workSchedule.DepartmentNameEn
+                @if (User.IsInRole(WebConstants.AdministratorRole))
+                {
+                    <div class="inl-flx">
+                       <a class="btn-sm btn-warning mr-l-25" asp-area="LibraryBlog" asp-controller="WorkSchedules" asp-action="Edit" asp-route-id="@workSchedule.Id">@Localizer["Edit Work Schedule"]</a>
+                       <a class="btn-sm btn-danger mr-l-25" asp-area="LibraryBlog" asp-controller="WorkSchedules" asp-action="Delete" asp-route-id="@workSchedule.Id">@Localizer["Delete Work Schedule"]</a>
+                    </div>
+                }
+            </td>
+            <td class="vertical-align-middle lib-cell-corrector">@workSchedule.WorkdaysEn</td>
+            <td class="vertical-align-middle lib-cell-corrector">@workSchedule.SaturdayEn</td>
+            <td class="vertical-align-middle lib-cell-corrector">@workSchedule.SundayEn</td>
+        }  
+         </tr>
+       
+    }
+    </tbody>
+    </table>
+</div>
+
+

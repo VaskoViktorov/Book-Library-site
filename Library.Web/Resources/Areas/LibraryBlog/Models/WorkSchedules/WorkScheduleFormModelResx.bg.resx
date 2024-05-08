@@ -117,148 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="en" xml:space="preserve">
-    <value>bg</value>
+  <data name="DepartmentNameBg" xml:space="preserve">
+    <value>Име на отдел на български</value>
   </data>
-  <data name="E-Library" xml:space="preserve">
-    <value>Е-Библиотека</value>
+  <data name="DepartmentNameEn" xml:space="preserve">
+    <value>Име на отдел на английски</value>
   </data>
-  <data name="Gallery" xml:space="preserve">
-    <value>Галерия</value>
+  <data name="MaxLengthErrorMsg" xml:space="preserve">
+    <value>Полето "{0}" не може да е по - дълго от {1} символа.</value>
   </data>
-  <data name="Home" xml:space="preserve">
-    <value>Начало</value>
+  <data name="MinLengthErrorMsg" xml:space="preserve">
+    <value>Полето "{0}" не може да е по - кратко от {1} символа.</value>
   </data>
-  <data name="Homeland" xml:space="preserve">
-    <value>Роден край</value>
+  <data name="RequiredErrorMsg" xml:space="preserve">
+    <value>Полето "{0}", е задължително.</value>
   </data>
-  <data name="Kids World" xml:space="preserve">
-    <value>Детски свят</value>
+  <data name="SaturdayBg" xml:space="preserve">
+    <value>Съботно работно време на български</value>
   </data>
-  <data name="Library" xml:space="preserve">
-    <value>Библиотека</value>
+  <data name="SaturdayEn" xml:space="preserve">
+    <value>Съботно работно време на английски</value>
   </data>
-  <data name="News" xml:space="preserve">
-    <value>Новини</value>
+  <data name="SundayBg" xml:space="preserve">
+    <value>Неделно работно време на български</value>
   </data>
-  <data name=": Closed" xml:space="preserve">
-    <value>: Почивен ден</value>
+  <data name="SundayEn" xml:space="preserve">
+    <value>Неделно работно време на английски</value>
   </data>
-  <data name="About us" xml:space="preserve">
-    <value>За нас</value>
+  <data name="WorkdaysBg" xml:space="preserve">
+    <value>Делнично работно време на български</value>
   </data>
-  <data name="My Account" xml:space="preserve">
-    <value>Профил</value>
-  </data>
-  <data name="Control Panel" xml:space="preserve">
-    <value>Контрол панел</value>
-  </data>
-  <data name="Closed" xml:space="preserve">
-    <value>Затворено</value>
-  </data>
-  <data name="Contacts" xml:space="preserve">
-    <value>Контакти</value>
-  </data>
-  <data name="Contributors" xml:space="preserve">
-    <value>Дарители</value>
-  </data>
-  <data name="Events" xml:space="preserve">
-    <value>Събития</value>
-  </data>
-  <data name="FAQ" xml:space="preserve">
-    <value>Въпроси</value>
-  </data>
-  <data name="Find us" xml:space="preserve">
-    <value>Къде се намираме</value>
-  </data>
-  <data name="For the curious" xml:space="preserve">
-    <value>За любителя</value>
-  </data>
-  <data name="For the student" xml:space="preserve">
-    <value>За ученика</value>
-  </data>
-  <data name="Functions" xml:space="preserve">
-    <value>Функции</value>
-  </data>
-  <data name="Library info" xml:space="preserve">
-    <value>За библиотеката</value>
-  </data>
-  <data name="Mihalaki Georgiev" xml:space="preserve">
-    <value>За Михалаки Георгиев</value>
-  </data>
-  <data name="New books" xml:space="preserve">
-    <value>Нови книги</value>
-  </data>
-  <data name="New children books" xml:space="preserve">
-    <value>Нови детски книги</value>
-  </data>
-  <data name="Open" xml:space="preserve">
-    <value>Отворено</value>
-  </data>
-  <data name="Opening hours" xml:space="preserve">
-    <value>Работно време</value>
-  </data>
-  <data name="Other E-Catalouges" xml:space="preserve">
-    <value>Други Е-Каталози</value>
-  </data>
-  <data name="Partners" xml:space="preserve">
-    <value>Партньори</value>
-  </data>
-  <data name="Price list" xml:space="preserve">
-    <value>Ценоразпис</value>
-  </data>
-  <data name="Publications" xml:space="preserve">
-    <value>Издания</value>
-  </data>
-  <data name="Regional Library &quot;Mihalaki Georgiev&quot; - Vidin" xml:space="preserve">
-    <value>Регионална Библиотека "Михалаки Георгиев"- гр. Видин</value>
-  </data>
-  <data name="Safe internet" xml:space="preserve">
-    <value>Безопасен интернет</value>
-  </data>
-  <data name="Our Services" xml:space="preserve">
-    <value>Услуги</value>
-  </data>
-  <data name="Structure" xml:space="preserve">
-    <value>Структура</value>
-  </data>
-  <data name="Subscription" xml:space="preserve">
-    <value>Абонамент</value>
-  </data>
-  <data name="Toggle navigation" xml:space="preserve">
-    <value>Включи навигацията</value>
-  </data>
-  <data name="Useful information" xml:space="preserve">
-    <value>Полезна информация</value>
-  </data>
-  <data name="Useful links" xml:space="preserve">
-    <value>Полезни връзки</value>
-  </data>
-  <data name="Users" xml:space="preserve">
-    <value>Потребители</value>
-  </data>
-  <data name="Vidin" xml:space="preserve">
-    <value>Видин</value>
-  </data>
-  <data name="Work with children program" xml:space="preserve">
-    <value>Програма за работа с деца</value>
-  </data>
-  <data name="I Accept" xml:space="preserve">
-    <value>Съгласен съм</value>
-  </data>
-  <data name="Read More" xml:space="preserve">
-    <value>Повече информация</value>
-  </data>
-  <data name="This site uses cookies to give the best user experience." xml:space="preserve">
-    <value>Сайтът използва \"бисквитки\", за да предостави възможно най-доброто потребителско изживяване.</value>
-  </data>
-  <data name="Cookie policy" xml:space="preserve">
-    <value>Бисквитки</value>
-  </data>
-  <data name="Site map" xml:space="preserve">
-    <value>Карта на сайта</value>
-  </data>
-  <data name="Significant people" xml:space="preserve">
-    <value>Известни личности</value>
+  <data name="WorkdaysEn" xml:space="preserve">
+    <value>Делнично работно време на английски</value>
   </data>
 </root>

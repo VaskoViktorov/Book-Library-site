@@ -90,10 +90,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>SurveyFormModelResx.resx</DependentUpon>
     </Compile>
+    <Compile Update="Resources\Areas\LibraryBlog\Models\WorkSchedules\WorkSchedulesFormModelResx.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>WorkSchedulesFormModelResx.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resources\Areas\LibraryBlog\Views\Employees\Edit.bg.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Edit.bg.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Areas\LibraryBlog\Views\WorkSchedules\_WorkScheduleListingView.bg.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>_WorkScheduleListingView.bg.resx</DependentUpon>
     </Compile>
     <Compile Update="Resources\Models\Account\ForgotPasswordViewModelResx.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -221,6 +231,13 @@
     <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\Surveys\SurveyFormModelResx.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SurveyFormModelResx.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\WorkSchedules\WorkScheduleFormModelResx.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Models\WorkSchedules\WorkSchedulesFormModelResx.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>WorkSchedulesFormModelResx.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Articles\Articles.bg.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -385,6 +402,25 @@
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\Surveys\Survey.bg.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\WorkSchedules\Create.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\WorkSchedules\Delete.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\WorkSchedules\Edit.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\WorkSchedules\WorkSchedules.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\WorkSchedules\_WorkScheduleForm.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Areas\LibraryBlog\Views\WorkSchedules\_WorkScheduleListingView.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_WorkScheduleListingView.bg.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Models\Account\ForgotPasswordViewModelResx.bg.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -668,6 +704,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Views\Shared\Components\Search\Default.bg.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Views\Shared\Components\WorkTime\Default.bg.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resources\Views\Shared\_Layout.bg.resx">

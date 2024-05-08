@@ -1,0 +1,48 @@
+﻿@model WorkScheduleFormModel
+@inject IViewLocalizer Localizer
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="DepartmentNameBg"></label>
+        <input asp-for="DepartmentNameBg" class="form-control" />
+        <span asp-validation-for="DepartmentNameBg" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DepartmentNameEn"></label>
+        <input asp-for="DepartmentNameEn" class="form-control" />
+        <span asp-validation-for="DepartmentNameEn" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="WorkdaysBg"></label>
+        <input asp-for="WorkdaysBg" class="form-control" />
+        <span asp-validation-for="WorkdaysBg" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="WorkdaysEn"></label>
+        <input asp-for="WorkdaysEn" class="form-control" />
+        <span asp-validation-for="WorkdaysEn" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SaturdayBg"></label>
+        <input asp-for="SaturdayBg" class="form-control" />
+        <span asp-validation-for="SaturdayBg" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SaturdayEn"></label>
+        <input asp-for="SaturdayEn" class="form-control" />
+        <span asp-validation-for="SaturdayEn" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SundayBg"></label>
+        <input asp-for="SundayBg" class="form-control" />
+        <span asp-validation-for="SundayBg" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SundayEn"></label>
+        <input asp-for="SundayEn" class="form-control" />
+        <span asp-validation-for="SundayEn" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-info">@Localizer["Save"]</button>
+    <a class="btn btn-default btn-sm" href="javascript:history.go(-1)">@Localizer["Back"]</a>
+</form>
+

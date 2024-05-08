@@ -1,0 +1,30 @@
+﻿@model WorkScheduleServiceModel
+
+@inject IViewLocalizer Localizer
+@{
+    var currentCulture = Context.Features.Get<IRequestCultureFeature>().RequestCulture.UICulture.Name;
+}
+<ul id="worktime-menu" class="dropdown-menu drop">
+@if (currentCulture == "bg-BG")
+{
+    
+        <li class="p-0-3"><span class="bold">@Localizer["Monday"]: </span>@Model.WorkdaysBg</li>
+        <li class="p-0-3"><span class="bold">@Localizer["Tuesday"]: </span>@Model.WorkdaysBg</li>
+        <li class="p-0-3"><span class="bold">@Localizer["Wednesday"]: </span>@Model.WorkdaysBg</li>
+        <li class="p-0-3"><span class="bold">@Localizer["Thursday"]: </span>@Model.WorkdaysBg</li>
+        <li class="p-0-3"><span class="bold">@Localizer["Friday"]: </span>@Model.WorkdaysBg</li>
+        <li class="p-0-3"><span class="bold">@Localizer["Saturday"]: </span>@Model.SaturdayBg</li>
+        <li class="p-0-3"><span class="bold">@Localizer["Sunday"]: </span>@Model.SundayBg</li>
+}
+else
+{
+        <li class="p-0-3"><span class="bold">@Localizer["Monday"]: </span>@Model.WorkdaysEn</li>
+        <li class="p-0-3"><span class="bold">@Localizer["Tuesday"]: </span>@Model.WorkdaysEn</li>
+        <li class="p-0-3"><span class="bold">@Localizer["Wednesday"]: </span>@Model.WorkdaysEn</li>
+        <li class="p-0-3"><span class="bold">@Localizer["Thursday"]: </span>@Model.WorkdaysEn</li>
+        <li class="p-0-3"><span class="bold">@Localizer["Friday"]: </span>@Model.WorkdaysEn</li>
+        <li class="p-0-3"><span class="bold">@Localizer["Saturday"]: </span>@Model.SaturdayEn</li>
+        <li class="p-0-3"><span class="bold">@Localizer["Sunday"]: </span>@Model.SundayEn</li>
+}
+  <li class="p-0-3 text-center"><a tabindex="-1" asp-area="LibraryBlog" asp-controller="WorkSchedules" asp-action="WorkSchedules" role="button">@Localizer["See More"]</a></li>
+</ul>

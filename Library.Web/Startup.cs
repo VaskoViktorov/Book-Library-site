@@ -299,6 +299,26 @@
                     defaults: new { area = "LibraryBlog", controller = "Employees", action = "Destroy" });
 
                 routes.MapRoute(
+                   name: "viewWorkSchedule",
+                   template: "libraryblog/workschedules/workschedules",
+                   defaults: new { area = "LibraryBlog", controller = "WorkSchedules", action = "WorkSchedules" });
+
+                routes.MapRoute(
+                    name: "editWorkSchedule",
+                    template: "libraryblog/workschedules/edit/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "WorkSchedules", action = "Edit" });
+
+                routes.MapRoute(
+                    name: "deleteWorkSchedule",
+                    template: "libraryblog/workschedules/delete/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "WorkSchedules", action = "Delete" });
+
+                routes.MapRoute(
+                    name: "destroyWorkSchedule",
+                    template: "libraryblog/workschedules/destroy/{id}",
+                    defaults: new { area = "LibraryBlog", controller = "WorkSchedules", action = "Destroy" });
+
+                routes.MapRoute(
                     name: "viewBooks",
                     template: "libraryblog/books/books",
                     defaults: new { area = "LibraryBlog", controller = "Books", action = "Books" });

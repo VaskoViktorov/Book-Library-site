@@ -127,8 +127,11 @@
             => View();
 
         public IActionResult WorkTime()
-            => View();
-           
+        {
+            var url = Url.RouteUrl("areas", new { controller = "workschedules", action = nameof(WorkSchedulesController.WorkSchedules), area = nameof(Areas.LibraryBlog) });
+            return RedirectPermanent(url);
+        }
+
         public IActionResult Staff()
         {
             var url = Url.RouteUrl("areas", new { controller = "departments", action = nameof(DepartmentsController.Departments), area = nameof(Areas.LibraryBlog) });
